@@ -1,0 +1,43 @@
+body {
+  background-color: #BFD6D3;
+  margin-top: 75px;
+  text-align: center;
+}
+li {
+  display: inline;
+  font-family: sans-serif;
+  float: right;
+  font-size: 12px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+}
+li a:hover {
+  color: #9BA3A2;
+}
+.topnav {
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+header {
+  color: white;
+  font-family: sans-serif;
+  margin-bottom: 45px;
+}
+.social-media {
+  width: 25px;
+  margin-top: 22px;
+}
+.copyright {
+  position: absolute;
+  bottom: 50px;
+  right: 0;
+  left: 0;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+#name-home-button {
+  float: left;
+}
