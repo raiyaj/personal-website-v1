@@ -31,7 +31,7 @@ header {
   margin-top: 22px;
 }
 .copyright {
-  position: absolute;
+  position: fixed;
   bottom: 50px;
   right: 0;
   left: 0;
@@ -44,4 +44,41 @@ header {
 }
 #name-home-button {
   float: left;
+}
+div.projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 65%;
+  margin-top: 50px;
+}
+a.projects {
+  display: inline-block;
+  margin-bottom: 15px;
+  width: calc(33% - 5.3px);
+  margin-right: 8px;
+  text-decoration: none;
+  color: black;
+}
+a.projects:nth-of-type(3n) {
+  margin-right: 0px;
+}
+a.projects:hover img {
+  opacity: 0.8;
+}
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+figcaption {
+  margin-top: 1px;
+  letter-spacing: 1.5px;
+  font-size: 13px;
+}
+img.projects {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+.smaller-year {
+  font-size: 75%;
 }
