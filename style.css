@@ -38,6 +38,10 @@ header {
   letter-spacing: 1.5px;
   font-size: 13px;
 }
+.footer-social-media {
+  width: 18px;
+  margin-bottom: 35px;
+}
 #name-home-button {
   float: left;
 }
