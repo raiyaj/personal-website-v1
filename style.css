@@ -30,11 +30,13 @@ header {
   width: 25px;
   margin-top: 22px;
 }
-.copyright {
-  position: fixed;
-  bottom: 50px;
-  right: 0;
+
+.footer {
+  position: absolute;
+  bottom: 0px;
   left: 0;
+  right: 0;
+  height:10px;
   letter-spacing: 1.5px;
   font-size: 13px;
 }
@@ -48,14 +50,14 @@ header {
 div.projects {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 65%;
+  width: 70%;
   margin-top: 50px;
 }
 a.projects {
   display: inline-block;
-  margin-bottom: 15px;
-  width: calc(33% - 5.3px);
-  margin-right: 8px;
+  margin-bottom: 30px;
+  width: calc(33% - 8px);
+  margin-right: 12px;
   text-decoration: none;
   color: black;
 }
@@ -65,13 +67,20 @@ a.projects:nth-of-type(3n) {
 a.projects:hover img {
   opacity: 0.8;
 }
+.project-hyperlink {
+  color: #53968E;
+  text-decoration: none;
+}
+.project-hyperlink:hover {
+  text-decoration: underline;
+}
 figure {
   margin: 0;
   overflow: hidden;
 }
 figcaption {
   margin-top: 1px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.3px;
   font-size: 13px;
 }
 img.projects {
@@ -81,4 +90,51 @@ img.projects {
 }
 .smaller-year {
   font-size: 75%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 0.9;
+}
+.popup {
+  margin: 80px auto;
+  padding: 20px;
+  background: #E4EDEC;
+  position: relative;
+  transition: all 5s ease-in-out;
+  margin-top: 200px;
+  width: 47%
+}
+.popup .close {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transition: all 200ms;
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+}
+.popup .prev-next {
+  text-decoration: none;
+  color: #434647;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}
+.popup .content {
+  letter-spacing: 1.3px;
+  font-size: 13px;
+  text-align: left;
+  overflow: auto;
+  color: #434647;
 }
