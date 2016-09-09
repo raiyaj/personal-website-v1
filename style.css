@@ -1,5 +1,5 @@
 body {
-  background-color: #BFD6D3;
+  background-color: #D9DED7;
   margin-top: 75px;
   text-align: center;
 }
@@ -33,10 +33,11 @@ header {
 
 .footer {
   position: absolute;
-  bottom: 0px;
+  bottom: 0;
   left: 0;
   right: 0;
-  height:10px;
+  height: 10px;
+  text-align: center;
   letter-spacing: 1.5px;
   font-size: 13px;
 }
@@ -46,6 +47,7 @@ header {
 }
 #name-home-button {
   float: left;
+  letter-spacing: 5px;
 }
 div.projects {
   display: inline-flex;
@@ -90,6 +92,7 @@ img.projects {
 }
 .smaller-year {
   font-size: 75%;
+  font-family: sans-serif;
 }
 
 .overlay {
