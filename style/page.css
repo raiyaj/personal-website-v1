@@ -1,0 +1,161 @@
+/* Page Section Text */
+.page {
+  margin-bottom: 45px;
+  margin-top: 0px;
+}
+.page-header {
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2.5px;
+}
+
+
+/* About */
+.page-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1px;
+  line-height: 23px;
+  font-size: 17px;
+}
+.block-container {
+  width: 65%;
+  text-align: center;
+  position: relative;
+  left: 50%;
+}
+.text-container {
+  text-align: left;
+  position: relative;
+  left: -50%;
+  margin-top: 25px;
+}
+.headshot {
+  border-radius: 50%;
+  width: 140px;
+}
+
+
+/* Projects */
+div #projects {
+  margin-top: 45px;
+  background-color: #C5D6E3
+}
+div #projects h1 {
+  color: white;
+}
+div.projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 82%;
+  margin-top: 0px;
+}
+a.projects {
+  display: inline-block;
+  margin-bottom: 30px;
+  width: calc(33% - 13.3px);
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
+}
+a.projects:nth-of-type(3n) {
+  margin-right: 0px;
+}
+img.pictures:hover {
+  opacity: 0.8;
+}
+.project-hyperlink {
+  color: #519AD6;
+  text-decoration: none;
+}
+.project-hyperlink:hover {
+  text-decoration: underline;
+}
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+figcaption {
+  margin-bottom: 15px;
+  letter-spacing: 1.3px;
+  font-size: 23px;
+  text-align: left;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
+}
+img.pictures {
+  border: none;
+  max-width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 250ms;
+  visibility: hidden;
+  opacity: 0;
+  overflow-y: scroll;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1.0;
+}
+.popup {
+  margin: 80px auto;
+  padding: 20px;
+  background: #FFF;
+  position: relative;
+  transition: all 5s ease-in-out;
+  margin-top: 100px;
+  width: 65%
+}
+.popup .close {
+  position: absolute;
+  top: 4px;
+  right: 15px;
+  transition: all 200ms;
+  font-size: 40px;
+  text-decoration: none;
+  color: #000;
+}
+/*.popup .prev-next {
+  text-decoration: none;
+  color: #434647;
+  font-size: 13px;
+  letter-spacing: 1.3px;
+}*/
+.popup .content {
+  letter-spacing: 1.3px;
+  font-size: 17px;
+  text-align: left;
+  overflow: auto;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+}
+.popup-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 37px;
+  margin-top: 5px;
+  color: #3A3B3B;
+  margin-bottom: 15px;
+}
+.popup-pic {
+  width: 98%;
+}
+
+/* Contact */
+.social-media {
+  width: 37px;
+  margin-top: 10px;
+}
+#icons {
+  display: inline;
+  margin-left: auto;
+  margin-right: auto;
+}
+.crossfade {
+
+}

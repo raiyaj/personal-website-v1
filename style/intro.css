@@ -1,0 +1,83 @@
+/* Includes body, navigation bar, background image and social media. */
+
+
+body {
+  text-align: center;
+  width: 100%;
+  overflow-x: hidden;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+/* Background Image */
+.intro {
+  background-image: url(../pages/projects/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Top Navigation Bar */
+li {
+  display: inline;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
+}
+li a {
+  text-decoration: none;
+  color: white;
+  transition: color .75s;
+  -webkit-transition: color .75s;
+  -moz-transition:    color .75s;
+  -ms-transition:     color .75s;
+  -o-transition:      color .75s;
+}
+li a:hover {
+  color: #2AE5E8;
+}
+.topnav {
+  overflow: hidden;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+}
+.menu {
+  background-color: black;
+  margin-top: 0;
+  opacity: .6;
+}
+
+
+/* Intro Section Text */
+header {
+  color: black;
+  font-family: 'Titillium Web', sans-serif;
+  margin-bottom: 45px;
+  margin-top: 110px;
+}
+.intro-text {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 17px;
+}
+
+
+/* Down Arrows */
+.down-arrows {
+  width: 80px;
+  bottom: 5px;
+  position: absolute;
+  transform: translate(-50%);
+}
+.down-arrows:hover {
+  bottom: -5px;
+  transition: 225ms;
+  opacity: .6;
+}
+div.arrow-wrapper {
+  padding: 0;
+}
