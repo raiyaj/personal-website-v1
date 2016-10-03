@@ -134,6 +134,7 @@ img.pictures {
   overflow: auto;
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 .popup-header {
   font-family: 'Source Sans Pro', sans-serif;
@@ -145,6 +146,32 @@ img.pictures {
 .popup-pic {
   width: 98%;
 }
+
+/* Button */
+.button-container {
+  margin-bottom: 20px;
+  margin-top: 35px;
+  text-align: left;
+}
+.button {
+  text-decoration: none;
+  width: 500px;
+  background: #d0d8e5;
+  color: #3A3B3B;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all .2s;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5),
+    1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+.button:hover {
+  background: #3A3B3B;
+  color: #d0d8e5;
+}
+
 
 /* Contact */
 .social-media {
