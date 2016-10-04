@@ -135,6 +135,14 @@ img.pictures {
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 20px;
   margin-bottom: 20px;
+  left: -50%;
+  position: relative;
+}
+.popup .content-container {
+  text-align: center;
+  position: relative;
+  width: 98%;
+  left: 50%;
 }
 .popup-header {
   font-family: 'Source Sans Pro', sans-serif;
