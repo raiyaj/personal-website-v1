@@ -98,6 +98,7 @@ img.pictures {
   visibility: hidden;
   opacity: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 .overlay:target {
   visibility: visible;
