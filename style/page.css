@@ -165,7 +165,7 @@ img.pictures {
 .button {
   text-decoration: none;
   width: 500px;
-  background: #d0d8e5;
+  background: #C5D6E3;
   color: #3A3B3B;
   border-radius: 5px;
   padding-left: 20px;
@@ -178,7 +178,7 @@ img.pictures {
 }
 .button:hover {
   background: #3A3B3B;
-  color: #d0d8e5;
+  color: #C5D6E3;
 }
 
 
