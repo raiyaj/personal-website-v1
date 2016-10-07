@@ -6,6 +6,7 @@
 .page-header {
   font-family: 'Titillium Web', sans-serif;
   letter-spacing: 2.5px;
+  font-size: 30px
 }
 
 
@@ -14,7 +15,7 @@
   font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1px;
   line-height: 23px;
-  font-size: 17px;
+  font-size: 18px;
 }
 .block-container {
   width: 65%;
@@ -37,20 +38,21 @@
 /* Projects */
 div #projects {
   margin-top: 45px;
-  background-color: #C5D6E3
+  padding-bottom: 28px;
+  background-color: #ccd9ea
 }
 div #projects h1 {
   color: white;
+  margin-bottom: 12px;
 }
 div.projects {
   display: inline-flex;
   flex-wrap: wrap;
   width: 82%;
-  margin-top: 0px;
 }
 a.projects {
   display: inline-block;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   width: calc(33% - 13.3px);
   margin-right: 20px;
   text-decoration: none;
@@ -63,7 +65,7 @@ img.pictures:hover {
   opacity: 0.8;
 }
 .project-hyperlink {
-  color: #519AD6;
+  color: #81edef;
   text-decoration: none;
 }
 .project-hyperlink:hover {
@@ -87,6 +89,8 @@ img.pictures {
   height: auto;
 }
 
+
+/* Popup */
 .overlay {
   position: fixed;
   top: 0;
@@ -130,12 +134,11 @@ img.pictures {
 }*/
 .popup .content {
   letter-spacing: 1.3px;
-  font-size: 17px;
+  font-size: 18px;
   text-align: left;
   overflow: auto;
   font-family: 'Source Sans Pro', sans-serif;
   margin-top: 20px;
-  margin-bottom: 20px;
   left: -50%;
   position: relative;
 }
@@ -156,6 +159,7 @@ img.pictures {
   width: 98%;
 }
 
+
 /* Button */
 .button-container {
   margin-bottom: 20px;
@@ -166,17 +170,17 @@ img.pictures {
   text-decoration: none;
   width: 500px;
   background: white;
-  border: 2px solid #9dbdf2;
-  color: #9dbdf2;
+  border: 2px solid #81edef;
+  color: #81edef;
   border-radius: 5px;
   padding-left: 20px;
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  -webkit-transition: all .2s;
+  -webkit-transition: all .4s;
 }
 .button:hover {
-  background: #9dbdf2;
+  background: #81edef;
   color: white;
 }
 
@@ -184,7 +188,7 @@ img.pictures {
 /* Contact */
 .social-media {
   width: 37px;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 #icons {
   display: inline;
