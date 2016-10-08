@@ -67,17 +67,21 @@ header {
 
 
 /* Down Arrows */
-.down-arrows {
-  width: 80px;
-  bottom: 5px;
+div.arrow-wrapper {
+  padding: 0;
+}
+.fa-angle-down {
+  color: black;
+  bottom: 6px;
   position: absolute;
   transform: translate(-50%);
 }
-.down-arrows:hover {
-  bottom: -5px;
-  transition: 225ms;
-  opacity: .6;
+.fa-angle-down:hover {
+  bottom: -6px;
+  transition: 0.3s;
 }
-div.arrow-wrapper {
-  padding: 0;
+.fa-angle-down:not(:hover) {
+  bottom: +6px;
+  transition: 0.35s;
+  opacity: 1;
 }
