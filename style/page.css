@@ -186,15 +186,48 @@ img.pictures {
 
 
 /* Contact */
-.social-media {
-  width: 37px;
-  margin-top: 8px;
+.fa-paper-plane {
+  color: black;
+  margin: 0px 10px;
 }
-#icons {
-  display: inline;
-  margin-left: auto;
-  margin-right: auto;
+.fa-paper-plane:hover {
+  color: #81edef;
+  -webkit-transition: all 0.2s;
+  transform: scale(1.2,1.2);
 }
-.crossfade {
-
+.fa-instagram {
+  color: black;
+  margin: 0px 10px;
+}
+.fa-instagram:hover {
+  color: #81edef;
+  -webkit-transition: all 0.3s;
+  transform: scale(1.2,1.2);
+}
+.fa-youtube-play {
+  color: black;
+  margin: 0px 10px;
+}
+.fa-youtube-play:hover {
+  color: #81edef;
+  -webkit-transition: all 0.3s;
+  transform: scale(1.2,1.2);
+}
+.fa-linkedin {
+  color: black;
+  margin: 0px 10px;
+}
+.fa-linkedin:hover {
+  color: #81edef;
+  -webkit-transition: all 0.3s;
+  transform: scale(1.2,1.2);
+}
+.fa-github-alt {
+  color: black;
+  margin: 0px 10px;
+}
+.fa-github-alt:hover {
+  color: #81edef;
+  -webkit-transition: all 0.3s;
+  transform: scale(1.2,1.2);
 }
