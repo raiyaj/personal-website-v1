@@ -198,6 +198,7 @@ img.pictures {
   font-family: 'Roboto', sans-serif;
   margin-top: 0;
   display: block;
+  margin-bottom:14px
 }
 .contact-link:hover {
   text-decoration: underline;
@@ -210,4 +211,18 @@ img.pictures {
 .github-link:hover {
   color: black;
   -webkit-transition: .4s;
+}
+
+.fa-instagram {
+  color: black;
+  margin: 0px 3px;
+  margin-left: 0;
+}
+.fa-youtube-play {
+  color: black;
+  margin: 0px 3px;
+}
+.fa-linkedin {
+  color: black;
+  margin: 0px 3px;
 }
