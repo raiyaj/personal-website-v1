@@ -8,14 +8,21 @@
   letter-spacing: 2.5px;
   font-size: 30px
 }
+.page-title {
+  font-family: 'Montserrat:400', sans-serif;
+  letter-spacing: 0.3px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+}
 
 
 /* About */
 .page-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  letter-spacing: 1px;
-  line-height: 23px;
-  font-size: 18px;
+  font-family: 'Montserrat:400', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  font-size: 15px;
 }
 .block-container {
   width: 65%;
@@ -27,7 +34,6 @@
   text-align: left;
   position: relative;
   left: -50%;
-  margin-top: 25px;
 }
 .headshot {
   border-radius: 50%;
