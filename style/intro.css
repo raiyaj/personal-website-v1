@@ -25,12 +25,12 @@ html, body {
 /* Top Navigation Bar */
 li {
   display: inline;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 19px;
+  font-family: 'Montserrat:400', sans-serif;
+  font-size: 15px;
 }
 li a {
   text-decoration: none;
-  color: white;
+  color: black;
   transition: color .75s;
   -webkit-transition: color .75s;
   -moz-transition:    color .75s;
@@ -38,31 +38,34 @@ li a {
   -o-transition:      color .75s;
 }
 li a:hover {
-  color: #2AE5E8;
+  text-decoration: underline;
 }
 .topnav {
   overflow: hidden;
   text-align: right;
   position: fixed;
   width: 100%;
-}
-.menu {
-  margin-top: 0;
-  background-color: rgba(0,0,0,0.5);
+  margin-top: 24px;
   z-index: 1;
 }
 
 
 /* Intro Section Text */
-header {
-  color: black;
-  font-family: 'Titillium Web', sans-serif;
-  margin-bottom: 45px;
-  margin-top: 110px;
+header h1 {
+  left: 0;
+  right: 0;
+  position: fixed;
+  text-align: center;
+  margin-top: 21px;
+  font-family: 'Archivo Narrow:700', sans-serif;
+  font-size:28px;
+  letter-spacing: 3.5px;
 }
 .intro-text {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 28px;
+  letter-spacing:0.5px;
+  margin-top: 80px;
 }
 
 
@@ -72,16 +75,16 @@ div.arrow-wrapper {
 }
 .fa-angle-down {
   color: black;
-  bottom: 6px;
+  margin-bottom: 10px;
   position: absolute;
   transform: translate(-50%);
 }
 .fa-angle-down:hover {
-  bottom: -6px;
+  bottom: -7px;
   transition: 0.3s;
 }
 .fa-angle-down:not(:hover) {
-  bottom: +6px;
-  transition: 0.35s;
+  bottom: +7px;
+  transition: 0.6s;
   opacity: 1;
 }
