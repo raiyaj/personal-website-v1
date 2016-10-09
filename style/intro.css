@@ -25,7 +25,7 @@ html, body {
 /* Top Navigation Bar */
 li {
   display: inline;
-  font-family: 'Montserrat:400', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
 li a {

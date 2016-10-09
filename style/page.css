@@ -1,6 +1,5 @@
 /* Page Section Text */
 .page {
-  margin-bottom: 45px;
   margin-top: 0px;
 }
 .page-header {
@@ -9,8 +8,8 @@
   font-size: 30px
 }
 .page-title {
-  font-family: 'Montserrat:400', sans-serif;
-  letter-spacing: 0.3px;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.25px;
   font-size: 15px;
   font-weight: bold;
   margin-top: 0px;
@@ -19,7 +18,7 @@
 
 /* About */
 .page-text {
-  font-family: 'Montserrat:400', sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.3px;
   line-height: 22px;
   font-size: 15px;
@@ -192,48 +191,23 @@ img.pictures {
 
 
 /* Contact */
-.fa-paper-plane {
+.contact-link {
+  text-decoration: none;
   color: black;
-  margin: 0px 10px;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  display: block;
 }
-.fa-paper-plane:hover {
-  color: #81edef;
-  -webkit-transition: all 0.2s;
-  transform: scale(1.2,1.2);
+.contact-link:hover {
+  text-decoration: underline;
 }
-.fa-instagram {
+.github-link {
+  color: #afafaf;
+  text-decoration: none;
+  font-size: 14px;
+}
+.github-link:hover {
   color: black;
-  margin: 0px 10px;
-}
-.fa-instagram:hover {
-  color: #81edef;
-  -webkit-transition: all 0.3s;
-  transform: scale(1.2,1.2);
-}
-.fa-youtube-play {
-  color: black;
-  margin: 0px 10px;
-}
-.fa-youtube-play:hover {
-  color: #81edef;
-  -webkit-transition: all 0.3s;
-  transform: scale(1.2,1.2);
-}
-.fa-linkedin {
-  color: black;
-  margin: 0px 10px;
-}
-.fa-linkedin:hover {
-  color: #81edef;
-  -webkit-transition: all 0.3s;
-  transform: scale(1.2,1.2);
-}
-.fa-github-alt {
-  color: black;
-  margin: 0px 10px;
-}
-.fa-github-alt:hover {
-  color: #81edef;
-  -webkit-transition: all 0.3s;
-  transform: scale(1.2,1.2);
+  -webkit-transition: .4s;
 }
