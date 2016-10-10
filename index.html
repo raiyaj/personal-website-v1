@@ -16,18 +16,54 @@
   ga('send', 'pageview');
 
 </script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+<script type="text/javascript" src="script/js"></script>
+   <script>
+       $(document).ready(function (){
+           $("#about-nav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#about").offset().top
+               }, 750);
+               return false;
+           });
+           $("#projects-nav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#projects").offset().top
+               }, 750);
+               return false;
+           });
+           $("#contact-nav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#contact").offset().top
+               }, 750);
+               return false;
+           });
+           $(".arrow-wrapper").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#about").offset().top
+               }, 750);
+               return false;
+           });
+           $("#home-nav").click(function (){
+               $('html, body').animate({
+                   scrollTop: $("#home").offset().top
+               }, 750);
+               return false;
+           });
+       });
+   </script>
 </head>
 
 
 <body>
 
-<div class="intro">
+<div class="intro" id="home">
     <div style="padding-top:1px">
       <ul class="topnav">
-        <li style="margin-right:18px"><a href="#"><i class="fa fa-home fa-flip-horizontal"></i></a></li>
-        <li style="margin-right:18px"><a href="#about">About</a></li>
-        <li style="margin-right:18px"><a href="#projects">Projects</a></li>
-        <li style="margin-right:75px"><a href="#contact">Contact</a></li>
+        <li style="margin-right:18px"><a href="#"><i class="fa fa-home fa-flip-horizontal" id="home-nav"></i></a></li>
+        <li style="margin-right:18px"><a href="#about" id="about-nav">About</a></li>
+        <li style="margin-right:18px"><a href="#projects" id="projects-nav">Projects</a></li>
+        <li style="margin-right:75px"><a href="#contact" id="contact-nav">Contact</a></li>
       </ul>
     </div>
     <header>
@@ -55,15 +91,8 @@
       <div class="block-container">
         <div class="text-container page-text">
           <p class="page-title">About</p>
-          <p>Hello! My name is Raiya. I'm a second-year computer science student,
-            currently studying at Simon Fraser University in Burnaby, British Columbia.
-            My coding journey began only a short time ago, when I decided to self-learn
-            how to build websites using HTML, CSS and JavaScript, and I soon realized that
-            I had found my calling.</p>
-          <p>I'm passionate about filmmaking, graphic design, web development and, on the
-             other end of the spectrum, about public health and social sustainability.
-             Ultimately, I hope to navigate into a career that lies somewhere at the
-             intersection of technology and health.</p>
+          <p>Hello! My name is Raiya. I'm a second-year computer science student, currently studying at Simon Fraser University in Burnaby, British Columbia. My coding journey began only a short time ago, when I decided to self-learn how to build websites using HTML, CSS and JavaScript, and I soon realized that I had found my calling.</p>
+          <p>I'm passionate about filmmaking, graphic design, web development and, on the other end of the spectrum, about public health and social sustainability. Ultimately, I hope to navigate into a career that lies somewhere at the intersection of technology and health.</p>
         </div>
       </div>
     </div>
