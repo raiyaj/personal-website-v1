@@ -33,6 +33,7 @@
   text-align: left;
   position: relative;
   left: -50%;
+  overflow: hidden;
 }
 .headshot {
   border-radius: 50%;
@@ -43,27 +44,23 @@
 /* Projects */
 div #projects {
   margin-top: 45px;
-  padding-bottom: 28px;
-  background-color: #ccd9ea
-}
-div #projects h1 {
-  color: white;
-  margin-bottom: 12px;
+  padding-bottom: 10px;
+  background-color: #eaeaea;
 }
 div.projects {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 82%;
+  width: 100%;
 }
 a.projects {
   display: inline-block;
-  margin-bottom: 20px;
-  width: calc(33% - 13.3px);
-  margin-right: 20px;
+  margin-bottom: 40px;
+  width: calc(50% - 35px);
+  margin-right: 70px;
   text-decoration: none;
   color: black;
 }
-a.projects:nth-of-type(3n) {
+a.projects:nth-of-type(2n) {
   margin-right: 0px;
 }
 img.pictures:hover {
@@ -78,15 +75,10 @@ img.pictures:hover {
 }
 figure {
   margin: 0;
-  overflow: hidden;
 }
 figcaption {
   margin-bottom: 15px;
-  letter-spacing: 1.3px;
-  font-size: 23px;
   text-align: left;
-  font-family: 'Source Sans Pro', sans-serif;
-  color: white;
 }
 img.pictures {
   border: none;
@@ -95,7 +87,7 @@ img.pictures {
 }
 
 
-/* Popup */
+/* Popup
 .overlay {
   position: fixed;
   top: 0;
@@ -131,12 +123,6 @@ img.pictures {
   text-decoration: none;
   color: #000;
 }
-/*.popup .prev-next {
-  text-decoration: none;
-  color: #434647;
-  font-size: 13px;
-  letter-spacing: 1.3px;
-}*/
 .popup .content {
   letter-spacing: 1.3px;
   font-size: 18px;
@@ -163,9 +149,9 @@ img.pictures {
 .popup-pic {
   width: 98%;
 }
+*/
 
-
-/* Button */
+/* Button
 .button-container {
   margin-bottom: 20px;
   margin-top: 35px;
@@ -188,7 +174,7 @@ img.pictures {
   background: #81edef;
   color: white;
 }
-
+*/
 
 /* Contact */
 .contact-link {
