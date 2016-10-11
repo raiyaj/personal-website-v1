@@ -2,10 +2,16 @@
 
 <html>
 <head>
+
+
+<!-----CSS----->
 <link rel="stylesheet" type="text/css" href="style/intro.css">
 <link rel="stylesheet" type="text/css" href="style/page.css">
 <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600|Titillium+Web|Archivo+Narrow:700|Reenie+Beanie|Roboto:400,700" rel="stylesheet">
 <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+
+
+<!-----Google Analytics----->
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -14,10 +20,11 @@
 
   ga('create', 'UA-83615872-1', 'auto');
   ga('send', 'pageview');
-
 </script>
+
+
+<!-----JavaScript----->
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-<script type="text/javascript" src="script/js"></script>
    <script>
        $(document).ready(function (){
            $("#about-nav").click(function (){
@@ -46,7 +53,7 @@
            });
            $("#home-nav").click(function (){
                $('html, body').animate({
-                   scrollTop: $("#home").offset().top
+                   scrollTop: $(".intro").offset().top
                }, 750);
                return false;
            });
@@ -57,7 +64,9 @@
 
 <body>
 
-<div class="intro" id="home">
+
+<!-----Navigation Bar----->
+<div class="intro">
     <div style="padding-top:1px">
       <ul class="topnav">
         <li style="margin-right:18px"><a href="#"><i class="fa fa-home fa-flip-horizontal" id="home-nav"></i></a></li>
@@ -70,10 +79,9 @@
       <h1>RAIYA JESSA.</h1>
     </header>
     <p class="intro-text">Artist, web developer, health and sustainability advocate.</p>
-<!--
-<button type="button">Click Me!</button>
--->
 
+
+<!-----Down Arrow----->
   <div class="arrow-wrapper">
     <a href="#about">
       <div>
@@ -86,6 +94,7 @@
 
   <div class="page">
 
+<!-----About----->
     <div style="padding-top: 95px" id="about">
       <img class="headshot" src="images/me2edit2.jpg" alt="headshot">
       <div class="block-container">
@@ -97,6 +106,8 @@
       </div>
     </div>
 
+
+<!-----Projects----->
     <div style="padding-top:80px" id="projects">
       <div class="block-container">
         <div class="text-container">
@@ -130,6 +141,9 @@
       </div>
       </div>
     </div>
+
+
+<!-----Popups----->
 <!--
     <div id="portfolio" class="overlay">
       <div class="popup">
@@ -186,6 +200,9 @@
       </div>
     </div>
 -->
+
+
+<!-----Contact----->
     <div style="padding-top:50px" id="contact">
         <div class="block-container">
           <div class="text-container" style="font-size:20px">
@@ -203,10 +220,6 @@
     </div>
 
   </div>
-<!--
-<div class="footer">
-<footer>&copy Coded by Raiya Jessa, 2016.</footer>
-</div>
--->
+
 </body>
 </html>
