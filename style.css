@@ -305,7 +305,11 @@ img.pictures {
   color: black;
   margin: 0px 3px;
 }
-.fa-twitter {
+.fa-github {
+  color: black;
+  margin: 0px 3px;
+}
+.fa-codepen {
   color: black;
   margin: 0px 3px;
 }
