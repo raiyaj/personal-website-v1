@@ -1,76 +1,165 @@
+/* Includes body, navigation bar, background image and social media. */
+
+
 body {
-  background-color: #D9DED7;
-  margin-top: 75px;
   text-align: center;
+  width: 100%;
+  overflow-x: hidden;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+/* Background Image */
+.intro {
+  background-image: url(pages/projects/background2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* Top Navigation Bar */
 li {
   display: inline;
-  font-family: sans-serif;
-  float: right;
-  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
 }
 li a {
   text-decoration: none;
-  color: white;
+  color: black;
+  transition: color .75s;
+  -webkit-transition: color .75s;
+  -moz-transition:    color .75s;
+  -ms-transition:     color .75s;
+  -o-transition:      color .75s;
 }
 li a:hover {
-  color: #9BA3A2;
+  text-decoration: underline;
 }
 .topnav {
-  margin: 0px;
-  padding: 0px;
   overflow: hidden;
-}
-header {
-  color: white;
-  font-family: sans-serif;
-  margin-bottom: 45px;
-}
-.social-media {
-  width: 25px;
-  margin-top: 22px;
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  margin-top: 24px;
+  z-index: 2;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
+
+/* Intro Section Text */
+header h1 {
   left: 0;
   right: 0;
-  height: 10px;
+  position: fixed;
   text-align: center;
-  letter-spacing: 1.5px;
-  font-size: 13px;
+  margin-top: 21px;
+  font-family: 'Archivo Narrow:700', sans-serif;
+  font-size:28px;
+  letter-spacing: 3.5px;
+  z-index: 1;
 }
-.footer-social-media {
-  width: 18px;
-  margin-bottom: 35px;
+.intro-text {
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 28px;
+  letter-spacing:0.5px;
+  margin-top: 80px;
 }
-#name-home-button {
-  float: left;
-  letter-spacing: 5px;
+
+
+/* Down Arrows */
+div.arrow-wrapper {
+  padding: 0;
+}
+.fa-angle-down {
+  color: black;
+  margin-bottom: 10px;
+  position: absolute;
+  transform: translate(-50%);
+}
+.fa-angle-down:hover {
+  bottom: -7px;
+  transition: 0.3s;
+}
+.fa-angle-down:not(:hover) {
+  bottom: +7px;
+  transition: 0.6s;
+  opacity: 1;
+}
+
+
+/* Main Page Section Text */
+.page {
+  margin-top: 0px;
+}
+.page-header {
+  font-family: 'Titillium Web', sans-serif;
+  letter-spacing: 2.5px;
+  font-size: 30px
+}
+.page-title {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.25px;
+  font-size: 15px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+
+/* About */
+.page-text {
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.3px;
+  line-height: 22px;
+  font-size: 15px;
+}
+.block-container {
+  width: 65%;
+  text-align: center;
+  position: relative;
+  margin: 0 auto;
+}
+.text-container {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+.headshot {
+  border-radius: 50%;
+  width: 140px;
+}
+
+
+/* Projects */
+div #projects {
+  margin-top: 45px;
+  padding-bottom: 10px;
+  background-color: #eaeaea;
 }
 div.projects {
   display: inline-flex;
   flex-wrap: wrap;
-  width: 70%;
-  margin-top: 50px;
+  width: 100%;
 }
 a.projects {
   display: inline-block;
-  margin-bottom: 30px;
-  width: calc(33% - 10px);
-  margin-right: 15px;
+  margin-bottom: 40px;
+  width: calc(50% - 35px);
+  margin-right: 70px;
   text-decoration: none;
   color: black;
 }
-a.projects:nth-of-type(3n) {
+a.projects:nth-of-type(2n) {
   margin-right: 0px;
 }
-a.projects:hover img {
+img.pictures:hover {
   opacity: 0.8;
 }
 .project-hyperlink {
-  color: #53968E;
+  color: #81edef;
   text-decoration: none;
 }
 .project-hyperlink:hover {
@@ -78,66 +167,145 @@ a.projects:hover img {
 }
 figure {
   margin: 0;
-  overflow: hidden;
 }
 figcaption {
-  margin-top: 1px;
-  letter-spacing: 1.3px;
-  font-size: 13px;
+  margin-bottom: 15px;
+  text-align: left;
 }
-img.projects {
+img.pictures {
   border: none;
   max-width: 100%;
   height: auto;
 }
-.smaller-year {
-  font-size: 75%;
-  font-family: sans-serif;
-}
 
+
+/* Popup
 .overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   background: rgba(0, 0, 0, 0.7);
-  transition: opacity 500ms;
+  transition: opacity 250ms;
   visibility: hidden;
   opacity: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 .overlay:target {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 1.0;
 }
 .popup {
-  margin: 80px auto;
+  margin: auto;
   padding: 20px;
-  background: #E4EDEC;
+  background: #FFF;
   position: relative;
   transition: all 5s ease-in-out;
-  margin-top: 200px;
-  width: 47%
+  margin-top: 100px;
+  width: 65%
 }
 .popup .close {
   position: absolute;
-  top: 10px;
-  right: 20px;
+  top: 4px;
+  right: 15px;
   transition: all 200ms;
-  font-size: 18px;
+  font-size: 40px;
   text-decoration: none;
   color: #000;
 }
-.popup .prev-next {
-  text-decoration: none;
-  color: #434647;
-  font-size: 13px;
-  letter-spacing: 1.3px;
-}
 .popup .content {
   letter-spacing: 1.3px;
-  font-size: 13px;
+  font-size: 18px;
   text-align: left;
   overflow: auto;
-  color: #434647;
+  font-family: 'Source Sans Pro', sans-serif;
+  margin-top: 20px;
+  left: -50%;
+  position: relative;
+}
+.popup .content-container {
+  text-align: center;
+  position: relative;
+  width: 98%;
+  left: 50%;
+}
+.popup-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 37px;
+  margin-top: 5px;
+  color: #3A3B3B;
+  margin-bottom: 15px;
+}
+.popup-pic {
+  width: 98%;
+}
+*/
+
+
+/* Button
+.button-container {
+  margin-bottom: 20px;
+  margin-top: 35px;
+  text-align: left;
+}
+.button {
+  text-decoration: none;
+  width: 500px;
+  background: white;
+  border: 2px solid #81edef;
+  color: #81edef;
+  border-radius: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all .4s;
+}
+.button:hover {
+  background: #81edef;
+  color: white;
+}
+*/
+
+
+/* Contact */
+.contact-link {
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 0;
+  display: block;
+  margin-bottom:14px
+}
+.contact-link:hover {
+  text-decoration: underline;
+}
+.github-link {
+  color: #afafaf;
+  text-decoration: none;
+  font-size: 14px;
+}
+.github-link:hover {
+  color: black;
+  -webkit-transition: .4s;
+}
+.fa-instagram {
+  color: black;
+  margin: 0px 3px;
+  margin-left: 0;
+}
+.fa-youtube-play {
+  color: black;
+  margin: 0px 3px;
+}
+.fa-linkedin {
+  color: black;
+  margin: 0px 3px;
+}
+.fa-twitter {
+  color: black;
+  margin: 0px 3px;
 }
