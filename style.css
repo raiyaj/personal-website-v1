@@ -14,7 +14,7 @@ html, body {
 
 /* Background Image */
 .intro {
-  background-image: url(pages/projects/background2.jpg);
+  background-image: url(images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
