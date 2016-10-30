@@ -50,7 +50,7 @@ li a:hover {
 }
 
 
-/* Intro Section Text */
+/* Home Text */
 header h1 {
   left: 0;
   right: 0;
@@ -158,13 +158,6 @@ a.projects:nth-of-type(2n) {
 img.pictures:hover {
   opacity: 0.8;
 }
-.project-hyperlink {
-  color: #81edef;
-  text-decoration: none;
-}
-.project-hyperlink:hover {
-  text-decoration: underline;
-}
 figure {
   margin: 0;
 }
@@ -179,7 +172,7 @@ img.pictures {
 }
 
 
-/* Popup
+/* Popup */
 .overlay {
   position: fixed;
   top: 0;
@@ -192,6 +185,7 @@ img.pictures {
   opacity: 0;
   overflow-y: scroll;
   overflow-x: hidden;
+  z-index: 3;
 }
 .overlay:target {
   visibility: visible;
@@ -211,40 +205,40 @@ img.pictures {
   top: 4px;
   right: 15px;
   transition: all 200ms;
-  font-size: 40px;
+  font-size: 30px;
   text-decoration: none;
-  color: #000;
+  color: black;
 }
-.popup .content {
-  letter-spacing: 1.3px;
-  font-size: 18px;
+.popup p {
   text-align: left;
-  overflow: auto;
-  font-family: 'Source Sans Pro', sans-serif;
-  margin-top: 20px;
-  left: -50%;
-  position: relative;
 }
-.popup .content-container {
+.popup .popup-container {
   text-align: center;
   position: relative;
-  width: 98%;
-  left: 50%;
+  width: 95%;
+  margin: 0 auto;
 }
-.popup-header {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 37px;
-  margin-top: 5px;
-  color: #3A3B3B;
+.popup h1 {
   margin-bottom: 15px;
+  text-align: center;
+  margin-top: 12px;
+  font-family: 'Archivo Narrow:700', sans-serif;
+  font-size:24px;
+  letter-spacing: 2px;
 }
-.popup-pic {
-  width: 98%;
+.popup img {
+  width: 60%;
 }
-*/
+.project-hyperlink {
+  color: #afafaf;
+  text-decoration: none;
+}
+.project-hyperlink:hover {
+  text-decoration: underline;
+}
 
 
-/* Button
+/* Button */
 .button-container {
   margin-bottom: 20px;
   margin-top: 35px;
@@ -254,20 +248,29 @@ img.pictures {
   text-decoration: none;
   width: 500px;
   background: white;
-  border: 2px solid #81edef;
-  color: #81edef;
+  border: 2px solid black;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
   border-radius: 5px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  -webkit-transition: all .4s;
+  padding-left: 6px;
+  padding-right: 11px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  -webkit-transition: all .6s;
 }
 .button:hover {
-  background: #81edef;
+  background: black;
   color: white;
 }
-*/
+.button:hover .fa-github {
+  color: white;
+  -webkit-transition: all .6s;
+}
+.button:not(:hover) .fa-github {
+  -webkit-transition: all .6s;
+}
+
 
 
 /* Contact */
@@ -292,24 +295,10 @@ img.pictures {
   color: black;
   -webkit-transition: .4s;
 }
+.fa {
+  color: black;
+  margin: 0px 3px;
+}
 .fa-instagram {
-  color: black;
-  margin: 0px 3px;
-  margin-left: 0;
-}
-.fa-youtube-play {
-  color: black;
-  margin: 0px 3px;
-}
-.fa-linkedin {
-  color: black;
-  margin: 0px 3px;
-}
-.fa-github {
-  color: black;
-  margin: 0px 3px;
-}
-.fa-codepen {
-  color: black;
-  margin: 0px 3px;
+  margin-left: 0px;
 }
