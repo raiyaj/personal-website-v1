@@ -222,15 +222,27 @@ img.pictures {
   margin-bottom: 15px;
   text-align: center;
   margin-top: 12px;
-  font-family: 'Archivo Narrow:700', sans-serif;
-  font-size:24px;
-  letter-spacing: 2px;
+  font-family: 'Roboto', sans-serif;
+  font-size:20px;
+  letter-spacing: 1px;
 }
 .popup img {
   width: 60%;
 }
+.popup .fa-caret-right {
+  position: absolute;
+  right: 20px;
+  padding-top: 13%;
+  font-size: 40px;
+}
+.popup .fa-caret-left {
+  font-size: 40px;
+  position: absolute;
+  left: 20px;
+  padding-top: 13%;
+}
 .project-hyperlink {
-  color: #afafaf;
+  color: #a1cadd;
   text-decoration: none;
 }
 .project-hyperlink:hover {
