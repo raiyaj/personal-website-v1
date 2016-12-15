@@ -213,9 +213,10 @@ img.pictures {
   padding: 20px;
   background: #FFF;
   position: relative;
-  transition: all 5s ease-in-out;
   margin-top: 100px;
-  width: 65%
+  width: 98%;
+  max-width: 700px;
+  border-radius: 5px;
 }
 .popup .close {
   position: absolute;
@@ -236,15 +237,16 @@ img.pictures {
   margin: 0 auto;
 }
 .popup h1 {
-  margin-bottom: 15px;
+  margin-bottom: 22px;
   text-align: center;
   margin-top: 12px;
   font-family: 'Roboto', sans-serif;
-  font-size:20px;
+  font-size: 23px;
   letter-spacing: 1px;
 }
 .popup img {
   width: 60%;
+  margin-bottom: 10px;
 }
 .popup .fa-caret-right {
   position: absolute;
@@ -257,6 +259,27 @@ img.pictures {
   position: absolute;
   left: 20px;
   padding-top: 13%;
+}
+/* Mobile */
+@media screen and (max-width:799px) {
+  .popup {
+    margin-top: 0px;
+  }
+  .popup h1 {
+    font-size: px;
+  }
+  .popup img {
+    width: 80%;
+  }
+  .popup .close {
+    font-size: 37px;
+  }
+  .popup .fa-caret-left {
+    left: 5px;
+  }
+  .popup .fa-caret-right {
+    right: 5px;
+  }
 }
 .project-hyperlink {
   color: #a1cadd;
