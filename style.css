@@ -296,30 +296,20 @@ img.pictures {
 .button {
   text-decoration: none;
   width: 500px;
-  background: white;
-  border: 2px solid black;
-  color: black;
+  background-color: #a1c3ce;
+  color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
-  border-radius: 5px;
-  padding-left: 6px;
-  padding-right: 11px;
-  padding-top: 8px;
-  padding-bottom: 8px;
-  -webkit-transition: all .6s;
+  border-radius: 3px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  -webkit-transition: all .3s;
 }
 .button:hover {
-  background: black;
-  color: white;
+  background: #89aeba;
 }
-.button:hover .fa-github {
-  color: white;
-  -webkit-transition: all .6s;
-}
-.button:not(:hover) .fa-github {
-  -webkit-transition: all .6s;
-}
-
 
 
 /* Contact */
