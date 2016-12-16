@@ -94,11 +94,6 @@ div.arrow-wrapper {
 .page {
   margin-top: 0px;
 }
-.page-header {
-  font-family: 'Titillium Web', sans-serif;
-  letter-spacing: 2.5px;
-  font-size: 30px
-}
 .page-title {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
@@ -243,8 +238,9 @@ img.pictures {
   text-align: center;
   margin-top: 12px;
   font-family: 'Roboto', sans-serif;
-  font-size: 23px;
-  letter-spacing: 1px;
+  font-size: 20px;
+  letter-spacing: 1.5px;
+  color: #4f4f4f;
 }
 .popup img {
   width: 60%;
@@ -252,12 +248,14 @@ img.pictures {
 }
 .popup .fa-caret-right {
   position: absolute;
+  color: #4f4f4f;
   right: 20px;
   padding-top: 13%;
   font-size: 40px;
 }
 .popup .fa-caret-left {
   font-size: 40px;
+  color: #4f4f4f;
   position: absolute;
   left: 20px;
   padding-top: 13%;
@@ -282,7 +280,7 @@ img.pictures {
   }
 }
 .project-hyperlink {
-  color: #a1cadd;
+  color: #89aeba;
   text-decoration: none;
 }
 .project-hyperlink:hover {
