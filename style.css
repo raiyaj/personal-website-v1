@@ -121,12 +121,6 @@ div.arrow-wrapper {
   position: relative;
   margin: 0 auto;
 }
-/* Mobile */
-@media screen and (max-width:799px) {
-  .block-container {
-    width: 92%;
-  }
-}
 .text-container {
   text-align: left;
   position: relative;
@@ -135,6 +129,15 @@ div.arrow-wrapper {
 .headshot {
   border-radius: 50%;
   width: 140px;
+}
+/* Mobile */
+@media screen and (max-width:799px) {
+  .block-container {
+    width: 92%;
+  }
+  .headshot {
+    margin-bottom: 20px;
+  }
 }
 
 
