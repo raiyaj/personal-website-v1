@@ -5,13 +5,17 @@ body {
   text-align: center;
   width: 100%;
 }
+
 html, body {
   height: 100%;
   margin: 0;
 }
 
 
+
+
 /* Background Image */
+
 .intro {
   background-image: url(images/background.jpg);
   background-size: cover;
@@ -21,12 +25,16 @@ html, body {
 }
 
 
+
+
 /* Top Navigation Bar */
+
 li {
   display: inline;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
 }
+
 li a {
   text-decoration: none;
   color: black;
@@ -36,9 +44,11 @@ li a {
   -ms-transition:     color .75s;
   -o-transition:      color .75s;
 }
+
 li a:hover {
   text-decoration: underline;
 }
+
 .topnav {
   overflow: hidden;
   text-align: right;
@@ -49,7 +59,10 @@ li a:hover {
 }
 
 
+
+
 /* Home Text */
+
 header h1 {
   left: 0;
   right: 0;
@@ -61,6 +74,7 @@ header h1 {
   letter-spacing: 3.5px;
   z-index: 1;
 }
+
 .intro-text {
   font-family: 'Reenie Beanie', sans-serif;
   font-size: 28px;
@@ -69,30 +83,39 @@ header h1 {
 }
 
 
+
+
 /* Down Arrows */
 div.arrow-wrapper {
   padding: 0;
 }
+
 .fa-angle-down {
   color: black;
   margin-bottom: 10px;
   position: absolute;
   transform: translate(-50%);
 }
+
 .fa-angle-down:hover {
   bottom: -7px;
   transition: 0.3s;
 }
+
 .fa-angle-down:not(:hover) {
   bottom: +7px;
   transition: 0.6s;
 }
 
 
+
+
 /* Main Page Section Text */
+
 .page {
   margin-top: 0px;
 }
+
 .page-title {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.25px;
@@ -102,29 +125,36 @@ div.arrow-wrapper {
 }
 
 
+
+
 /* About */
+
 .page-text {
   font-family: 'Roboto', sans-serif;
   letter-spacing: 0.3px;
   line-height: 22px;
   font-size: 15px;
 }
+
 .block-container {
   width: 736px;
   text-align: center;
   position: relative;
   margin: 0 auto;
 }
+
 .text-container {
   text-align: left;
   position: relative;
   overflow: hidden;
 }
+
 .headshot {
   border-radius: 50%;
   width: 140px;
 }
-/* Mobile */
+
+/* Mobile (re-size main page content and add space underneath headshot) */
 @media screen and (max-width:799px) {
   .block-container {
     width: 92%;
@@ -133,6 +163,8 @@ div.arrow-wrapper {
     margin-bottom: 20px;
   }
 }
+
+
 
 
 /* Projects */
@@ -150,7 +182,8 @@ a.projects {
   text-decoration: none;
   color: black;
 }
-/* Desktop */
+
+/* Desktop (grid) */
 @media screen and (min-width:800px) {
   a.projects {
     width: calc(50% - 20px);
@@ -161,7 +194,8 @@ a.projects {
     margin-right: 0px;
   }
 }
-/* Mobile */
+
+/* Mobile (stacked) */
 @media screen and (max-width:799px) {
   a.projects {
     margin: auto;
@@ -169,16 +203,20 @@ a.projects {
     margin-bottom: 40px;
   }
 }
+
 img.pictures:hover {
   opacity: 0.8;
 }
+
 figure {
   margin: 0;
 }
+
 figcaption {
   margin-bottom: 15px;
   text-align: left;
 }
+
 img.pictures {
   border: none;
   max-width: 100%;
@@ -186,7 +224,10 @@ img.pictures {
 }
 
 
+
+
 /* Popup */
+
 .overlay {
   position: fixed;
   top: 0;
@@ -200,10 +241,12 @@ img.pictures {
   overflow-x: hidden;
   z-index: 3;
 }
+
 .overlay:target {
   visibility: visible;
   opacity: 1.0;
 }
+
 .popup {
   margin: auto;
   padding: 20px;
@@ -213,6 +256,7 @@ img.pictures {
   width: 700px;
   border-radius: 5px;
 }
+
 .popup .close {
   position: absolute;
   top: 4px;
@@ -222,15 +266,18 @@ img.pictures {
   text-decoration: none;
   color: black;
 }
+
 .popup p {
   text-align: left;
 }
+
 .popup .popup-container {
   text-align: center;
   position: relative;
   width: 95%;
   margin: 0 auto;
 }
+
 .popup h1 {
   margin-bottom: 22px;
   text-align: center;
@@ -244,6 +291,7 @@ img.pictures {
   width: 60%;
   margin-bottom: 10px;
 }
+
 .popup .fa-caret-right {
   position: absolute;
   color: #4f4f4f;
@@ -251,6 +299,7 @@ img.pictures {
   padding-top: 13%;
   font-size: 40px;
 }
+
 .popup .fa-caret-left {
   font-size: 40px;
   color: #4f4f4f;
@@ -258,28 +307,34 @@ img.pictures {
   left: 20px;
   padding-top: 13%;
 }
+
 .project-hyperlink {
   color: #89aeba;
   text-decoration: none;
   border-bottom: solid 1px #d0e6ed;
 }
+
 .project-hyperlink:hover {
   border-color: #648089;
 }
+
 .prev-next {
   text-align: right !important;
 }
+
 .prev-next a {
   text-decoration: none;
   color: black;
 }
-/* Desktop */
+
+/* Desktop (hide prev/next text links) */
 @media screen and (min-width:800px) {
   .prev-next {
     display: none;
   }
 }
-/* Mobile */
+
+/* Mobile (hide fa arrows and play with popup margins) */
 @media screen and (max-width:799px) {
   .popup {
     margin-top: 0px;
@@ -300,12 +355,16 @@ img.pictures {
 }
 
 
+
+
 /* Button */
+
 .button-container {
   margin-bottom: 20px;
   margin-top: 35px;
   text-align: left;
 }
+
 .button {
   text-decoration: none;
   width: 500px;
@@ -314,18 +373,19 @@ img.pictures {
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
   border-radius: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 20px 10px 20px;
   -webkit-transition: all .3s;
 }
+
 .button:hover {
   background: #89aeba;
 }
 
 
+
+
 /* Contact */
+
 .contact-link {
   text-decoration: none;
   color: black;
@@ -335,22 +395,27 @@ img.pictures {
   display: block;
   margin-bottom:14px
 }
+
 .contact-link:hover {
   text-decoration: underline;
 }
+
 .github-link {
   color: #afafaf;
   text-decoration: none;
   font-size: 14px;
 }
+
 .github-link:hover {
   color: black;
   -webkit-transition: .4s;
 }
+
 .fa {
   color: black;
   margin: 0px 3px;
 }
+
 .fa-instagram {
   margin-left: 0px;
 }
