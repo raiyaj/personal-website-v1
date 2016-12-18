@@ -117,17 +117,13 @@ div.arrow-wrapper {
 }
 
 .page-title {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.25px;
-  font-size: 15px;
+  font-family: 'Reenie Beanie', sans-serif;
+  letter-spacing: 0.75px;
+  font-size: 23px;
   font-weight: bold;
   margin-top: 0px;
+  margin-bottom: 12px;
 }
-
-
-
-
-/* About */
 
 .page-text {
   font-family: 'Roboto', sans-serif;
@@ -135,6 +131,11 @@ div.arrow-wrapper {
   line-height: 22px;
   font-size: 15px;
 }
+
+
+
+
+/* About */
 
 .block-container {
   width: 736px;
