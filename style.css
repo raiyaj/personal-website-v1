@@ -137,6 +137,11 @@ div.arrow-wrapper {
 
 /* About */
 
+div #about {
+  padding-top: 95px;
+  padding-bottom: 35px;
+}
+
 .block-container {
   width: 736px;
   text-align: center;
@@ -170,15 +175,17 @@ div.arrow-wrapper {
 
 /* Projects */
 div #projects {
-  margin-top: 45px;
-  padding-bottom: 25px;
+  padding-bottom: 20px;
+  padding-top: 80px;
   background-color: #eaeaea;
 }
+
 div.projects {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
 }
+
 a.projects {
   text-decoration: none;
   color: black;
