@@ -126,6 +126,10 @@ div.arrow-wrapper {
   font-size: 15px;
 }
 
+.bold {
+  font-weight: bold;
+}
+
 
 
 
@@ -289,15 +293,15 @@ img.pictures {
   letter-spacing: 1.5px;
   color: #4f4f4f;
 }
-.popup img {
-  width: 95%;
-  margin-bottom: 10px;
-}
 
 .project-hyperlink {
   color: #89aeba;
   text-decoration: none;
   border-bottom: solid 1px #d0e6ed;
+}
+
+.popup img {
+  width: 100%;
 }
 
 .project-hyperlink:hover {
@@ -330,8 +334,7 @@ img.pictures {
 /* Button */
 
 .button-container {
-  margin-bottom: 20px;
-  margin-top: 35px;
+  margin-top: 25px;
   text-align: left;
 }
 
