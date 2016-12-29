@@ -268,7 +268,7 @@ img.pictures {
   top: 4px;
   right: 15px;
   transition: all 200ms;
-  font-size: 30px;
+  font-size: 37px;
   text-decoration: none;
   color: black;
 }
@@ -322,9 +322,6 @@ img.pictures {
   .popup {
     margin-top: 0px;
     width: 90%;
-  }
-  .popup .close {
-    font-size: 37px;
   }
 }
 
