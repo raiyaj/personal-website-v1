@@ -294,18 +294,18 @@ img.pictures {
   color: #4f4f4f;
 }
 
-.project-hyperlink {
-  color: #89aeba;
+.blue-hyperlink {
+  color: #94c5e8;
   text-decoration: none;
-  border-bottom: solid 1px #d0e6ed;
+  border-bottom: solid 1px #c4ddef;
+}
+
+.blue-hyperlink:hover {
+  border-color: #6396e8;
 }
 
 .popup img {
   width: 100%;
-}
-
-.project-hyperlink:hover {
-  border-color: #648089;
 }
 
 .prev-next {
