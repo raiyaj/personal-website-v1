@@ -111,9 +111,9 @@ div.arrow-wrapper {
 }
 
 .page-title {
-  font-family: 'Reenie Beanie', sans-serif;
+  font-family: 'Archivo Narrow', sans-serif;
   letter-spacing: 0.75px;
-  font-size: 23px;
+  font-size: 15px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 12px;
@@ -184,26 +184,26 @@ div.projects {
   width: 100%;
 }
 
-a.projects {
+.projects a {
   text-decoration: none;
   color: black;
 }
 
 /* Desktop (grid) */
 @media screen and (min-width:800px) {
-  a.projects {
+  .projects section {
     width: calc(50% - 20px);
     margin-right: 40px;
     margin-bottom: 30px;
   }
-  a.projects:nth-of-type(2n) {
+  .projects section:nth-of-type(2n) {
     margin-right: 0px;
   }
 }
 
 /* Mobile (stacked) */
 @media screen and (max-width:799px) {
-  a.projects {
+  .projects section {
     margin: auto;
     width: 450px;
     margin-bottom: 40px;
