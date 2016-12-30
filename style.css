@@ -295,7 +295,7 @@ img.pictures {
 }
 
 .blue-hyperlink {
-  color: #94c5e8;
+  color: #89b6ff;
   text-decoration: none;
   border-bottom: solid 1px #c4ddef;
 }
@@ -338,7 +338,7 @@ img.pictures {
 .button {
   text-decoration: none;
   width: 500px;
-  background-color: #a1c3ce;
+  background-color: #89b6ff;
   color: white;
   font-family: 'Roboto', sans-serif;
   font-size: 15px;
@@ -348,7 +348,7 @@ img.pictures {
 }
 
 .button:hover {
-  background: #89aeba;
+  background: #5189e2;
 }
 
 
