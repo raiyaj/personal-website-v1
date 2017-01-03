@@ -84,7 +84,7 @@
          });
          $(".arrow-wrapper").click(function (){
            $('html, body').animate({
-             scrollTop: $("#about").offset().top
+             scrollTop: $("#about").offset().top - $("nav ul").height()
            }, 750);
            return false;
          });
