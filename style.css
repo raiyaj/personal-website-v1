@@ -223,6 +223,16 @@ div .projects {
   .projects figure img {
     margin-bottom: 20px;
   }
+  .project-title {
+    margin-left: calc((100% - 450px) / 2);
+  }
+}
+
+/* Mobile, once project images have filled .block-container (eg. 92%) */
+@media screen and (max-width:487px) {
+  .project-title {
+    margin-left: 0;
+  }
 }
 
 img.pictures:hover {
