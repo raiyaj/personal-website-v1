@@ -199,6 +199,9 @@ div .projects {
   text-decoration: none;
   color: black;
 }
+.projects figure img {
+  margin-bottom: 20px;
+}
 
 /* Desktop (grid) */
 @media screen and (min-width:800px) {
@@ -209,9 +212,9 @@ div .projects {
   .projects section:nth-of-type(2n) {
     margin-right: 0px;
   }
-  /*.projects section:nth-child(3) {
+  .projects section:nth-child(3) {
     margin: 0 auto;
-  }*/
+  }
 }
 
 /* Mobile (stacked) */
@@ -219,9 +222,6 @@ div .projects {
   .projects section {
     margin: auto;
     width: 450px;
-  }
-  .projects figure img {
-    margin-bottom: 20px;
   }
   .project-title {
     margin-left: calc((100% - 450px) / 2);
@@ -244,7 +244,7 @@ figure {
 }
 
 figcaption {
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   text-align: left;
   color: #4f4f4f;
 }
