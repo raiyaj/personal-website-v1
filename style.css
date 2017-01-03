@@ -63,19 +63,17 @@ nav ul li a:hover {
 header h1 {
   left: 0;
   right: 0;
-  position: fixed;
-  margin-top: 21px;
-  font-family: 'Archivo Narrow:700', sans-serif;
-  font-size:28px;
+  margin-top: 190px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
   letter-spacing: 3.5px;
-  z-index: 1;
 }
 
 .intro-text {
-  font-family: 'Reenie Beanie', sans-serif;
-  font-size: 28px;
-  letter-spacing:0.5px;
-  margin-top: 80px;
+  font-family: 'Amatic SC', sans-serif;
+  font-size: 32px;
+  letter-spacing: 0.75px;
+  margin-top: 0px;
 }
 
 
