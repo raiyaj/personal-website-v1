@@ -66,13 +66,13 @@
          //Scrolling
          $("#about-nav").click(function (){
            $('html, body').animate({
-             scrollTop: $("#about").offset().top
+             scrollTop: $("#about").offset().top - $("nav ul").height()
            }, 750);
            return false;
          });
          $("#projects-nav").click(function (){
            $('html, body').animate({
-             scrollTop: $("#projects").offset().top
+             scrollTop: $("#projects").offset().top - $("nav ul").height()
            }, 750);
            return false;
          });
