@@ -22,6 +22,7 @@ html, body {
   background-repeat: no-repeat;
   width: 100%;
   height: 100%;
+  transition: height 0.5s;
 }
 
 
@@ -39,11 +40,11 @@ nav ul {
   padding: 8px 0px;
 
   /* transition for background change (triggered in javascript) */
-  -webkit-transition: all .7s ease;
-  -moz-transition: all .7s ease;
-  -ms-transition: all .7s ease;
-  -o-transition: all .7s ease;
-  transition: all .7s ease;
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
 }
 
 nav ul li {
@@ -61,6 +62,12 @@ nav ul li a {
   text-decoration: none;
   color: black;
   padding: 8px 12px;
+
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 nav ul li a:hover {
