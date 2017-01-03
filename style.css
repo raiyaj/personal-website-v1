@@ -16,7 +16,7 @@ html, body {
 
 /* Background Image */
 
-.intro {
+#home {
   background-image: url(images/background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -33,27 +33,48 @@ nav ul {
   text-align: right;
   position: fixed;
   width: 100%;
-  margin-top: 33px;
+  margin-top: 0px;
   z-index: 2;
+  background: rgba(255,255,255,0.6);
+  padding: 8px 0px;
+
+  /* transition for background change (triggered in javascript) */
+  -webkit-transition: all .7s ease;
+  -moz-transition: all .7s ease;
+  -ms-transition: all .7s ease;
+  -o-transition: all .7s ease;
+  transition: all .7s ease;
 }
 
 nav ul li {
   display: inline;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  letter-spacing: 0.3px;
-  color: #4f4f4f;
+}
+
+nav ul li:last-child {
+  margin-right: 55px;
 }
 
 nav ul li a {
+  font-family: 'Roboto', sans-serif;
+  font-size: 13px;
+  letter-spacing: 0.5px;
   text-decoration: none;
   color: black;
+  padding: 8px 12px;
 }
 
 nav ul li a:hover {
-  text-decoration: underline;
+  background: rgba(255,255,255,0.7);
 }
 
+@media screen and (max-width:799px) {
+  nav ul {
+    text-align: center;
+  }
+  nav ul li:last-child {
+    margin-right: 0px;
+  }
+}
 
 
 
@@ -69,7 +90,7 @@ header h1 {
   letter-spacing: 3.5px;
 }
 
-.intro-text {
+.home-text {
   font-family: 'Amatic SC', sans-serif;
   font-size: 32px;
   letter-spacing: 0.75px;

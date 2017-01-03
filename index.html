@@ -39,6 +39,30 @@
    <script>
        $(document).ready(function (){
 
+
+         //Change background and hover colors of nav bar past home section
+         $(window).scroll(function() { //Execute each time you scroll
+           var scroll = $(window).scrollTop(); // how many pixels you've scrolled
+           var ht = $("#home").height(); // height of div in pixels
+           if (scroll >= ht) { //if you've scrolled further than the height of div
+             $("nav ul").css("background","rgba(0,0,0,0.8)");
+             $("nav ul li a").css("color","white");
+             $("nav ul li a").mouseenter(function() { //background color change on hover
+               $(this).css("background","rgba(0,0,0,0.7)");
+             }).mouseleave(function() {
+               $(this).css("background","none");
+             });
+           } else {
+             $("nav ul").css("background","rgba(255,255,255,0.6)");
+             $("nav ul li a").css("color","black");
+             $("nav ul li a").mouseenter(function() { //background color change on hover
+               $(this).css("background","rgba(255,255,255,0.7)");
+             }).mouseleave(function() {
+               $(this).css("background","none");
+             });
+           }
+         });
+
          //Scrolling
          $("#about-nav").click(function (){
            $('html, body').animate({
@@ -66,7 +90,7 @@
          });
          $("#home-nav").click(function (){
            $('html, body').animate({
-             scrollTop: $(".intro").offset().top
+             scrollTop: $("#home").offset().top
            }, 750);
            return false;
          });
@@ -89,21 +113,21 @@
 
 
 <!-----Navigation Bar----->
-<div class="intro">
+<div id="home">
     <div style="padding-top:1px">
       <nav>
         <ul>
-          <li style="margin-right:18px"><a href="#"><i class="fa fa-home fa-flip-horizontal" id="home-nav"></i></a></li>
-          <li style="margin-right:18px"><a href="#about" id="about-nav">About</a></li>
-          <li style="margin-right:18px"><a href="#projects" id="projects-nav">Projects</a></li>
-          <li style="margin-right:75px"><a href="#contact" id="contact-nav">Contact</a></li>
+          <li><a href="#home"><i class="fa fa-home fa-flip-horizontal" id="home-nav"></i></a></li>
+          <li><a href="#about" id="about-nav">About</a></li>
+          <li><a href="#projects" id="projects-nav">Projects</a></li>
+          <li><a href="#contact" id="contact-nav">Contact</a></li>
         </ul>
       </nav>
     </div>
     <header>
       <h1>RAIYA JESSA</h1>
     </header>
-    <p class="intro-text">Developer and health advocate</p>
+    <p class="home-text">Developer and health advocate</p>
 
 
 <!-----Down Arrow----->
