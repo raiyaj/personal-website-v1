@@ -101,6 +101,7 @@
            return false;
          });
 
+
          //Disable background scrolling while popup is open
          $(".pictures").on("click", function() {
            $("body").css("overflow","hidden");
@@ -108,6 +109,11 @@
          $(".close").on("click", function() {
            $("body").css("overflow","auto");
          });
+         if (window.location.href.indexOf("#front-end-dev") != -1 ||
+         window.location.href.indexOf("#back-end-dev") != -1 ||
+         window.location.href.indexOf("#mount-baker") != -1) {
+           $("body").css("overflow","hidden");
+         }
 
 
        });
