@@ -67,8 +67,24 @@ $(document).ready(function (){
   if (window.location.href.indexOf("#front-end-dev") != -1 ||
   window.location.href.indexOf("#back-end-dev") != -1 ||
   window.location.href.indexOf("#mount-baker") != -1) {
+  //this is statement is for when the website loads with a popup already open
     $("body").css("overflow","hidden");
+
   }
+
+
+  //Click anywhere outside popup to close
+  $(document).click(function(e) {  // 'e' is event
+    if ((window.location.href.indexOf("#front-end-dev") != -1 ||
+    window.location.href.indexOf("#back-end-dev") != -1 ||
+    window.location.href.indexOf("#mount-baker") != -1) &&
+    !$(e.target).is(".popup") && !$(e.target).parents().is(".popup")) {
+    //eg. only if a popup is actually open and if
+    //the event (click) is not on .popup, or on any element whose parent is .popup
+      location.href = "#/";  //close popup w/o scrolling to top
+      $("body").css("overflow","auto");  //enable background scrolling again
+    }
+  });
 
 
 });
