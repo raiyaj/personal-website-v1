@@ -261,10 +261,6 @@ div .projects {
   }
 }
 
-img.pictures:hover {
-  opacity: 0.8;
-}
-
 figure {
   margin: 0;
 }
@@ -280,6 +276,16 @@ img.pictures {
   max-width: 100%;
   height: auto;
   border-radius: 4px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+img.pictures:hover {
+  opacity: 0.8;
+  transform: scale(0.985);
 }
 
 
@@ -320,11 +326,6 @@ img.pictures {
   position: absolute;
   top: 4px;
   right: 15px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
   font-size: 37px;
   text-decoration: none;
   color: #4f4f4f;
