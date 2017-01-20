@@ -92,16 +92,17 @@ header h1 {
   left: 0;
   right: 0;
   margin-top: 190px;
-  font-family: 'Raleway', sans-serif;
-  font-size: 33px;
-  letter-spacing: 3.5px;
+  font-family: 'Reenie Beanie', sans-serif;
+  font-size: 52px;
+  letter-spacing: 2.75px;
+  font-weight: 500;
 }
 
 .home-text {
-  font-family: 'Amatic SC', sans-serif;
-  font-size: 32px;
-  letter-spacing: 0.75px;
-  margin-top: -17px;
+  font-family: 'Megrim', sans-serif;
+  font-size: 25px;
+  letter-spacing: 1px;
+  margin-top: -30px;
 }
 
 
