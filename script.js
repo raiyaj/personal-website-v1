@@ -67,7 +67,7 @@ $(document).ready(function (){
   if (window.location.href.indexOf("#front-end-dev") != -1 ||
   window.location.href.indexOf("#back-end-dev") != -1 ||
   window.location.href.indexOf("#mount-baker") != -1) {
-  //this is statement is for when the website loads with a popup already open
+  //this if statement is for when the website loads with a popup already open
     $("body").css("overflow","hidden");
 
   }
@@ -83,8 +83,19 @@ $(document).ready(function (){
     //the event (click) is not on .popup, or on any element whose parent is .popup
       location.href = "#/";  //close popup w/o scrolling to top
       $("body").css("overflow","auto");  //enable background scrolling again
+      $(".overlay").css("transition","0.4s");  //re-add overlay transition
     }
   });
+
+
+  //Add fade transition to popups, except for when navigating with prev/next buttons
+  $(".pictures, .close").on("click", function() {  //note jQuery target selector syntax for 'or'
+    $(".overlay").css("transition","0.4s");
+  });
+  $(".prev-next").on("click", function() {
+    $(".overlay").css("transition","none");
+  });
+
 
 
 });
