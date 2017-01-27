@@ -359,12 +359,12 @@ img.pictures:hover {
 }
 
 .green-hyperlink {
-  color: #4ba846;
+  color: #4aba44;
   text-decoration: none;
 }
 
 .green-hyperlink:hover {
-  border-bottom: solid 1px #348e5b;
+  border-bottom: solid 1px #35a030;
 }
 
 .popup img {
@@ -443,7 +443,7 @@ div #contact {
 }
 
 .contact-link-container .fa {
-  color: #4ba846;
+  color: #4aba44;
   margin: 0px 5px;
   font-size: 23px;
   -webkit-transition: all .3s;
@@ -454,7 +454,7 @@ div #contact {
 }
 
 .contact-link-container .fa:hover {
-  color: #348e5b;
+  color: #35a030;
   z-index: 1; /* causes scaling not to disrupt other formatting */
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
