@@ -92,21 +92,29 @@ nav ul li a:hover {
 
 /* Home Text */
 
+header {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -25px;
+}
+
 header h1 {
-  left: 0;
-  right: 0;
-  margin-top: 190px;
-  font-family: 'Reenie Beanie', sans-serif;
-  font-size: 52px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 33px;
   letter-spacing: 2.75px;
   font-weight: 500;
 }
 
-.home-text {
+header .home-text {
   font-family: 'Megrim', sans-serif;
   font-size: 25px;
   letter-spacing: 1px;
-  margin-top: -30px;
+  margin-top: -15px;
 }
 
 
