@@ -1,51 +1,72 @@
 $(document).ready(function (){
 
 
-  //Change background and hover colors of nav bar past home section
+  //Declare scrolling-related variables
+  var scroll;  //pixels you've scrolled from top
+  var homeHeight;  //height of div in pixels
+  var aboutHeight;
+  var navHeight = $("nav ul").height(); //always constant so calculate now
+
+
+  //Change background of nav bar past home section, and add hover colors
   $(window).scroll(function() { //Execute each time you scroll
-    var scroll = $(window).scrollTop(); // how many pixels you've scrolled
-    var ht = $("#home").height(); // height of div in pixels
-    if (scroll >= ht) { //if you've scrolled further than the height of div
+    scroll = $(window).scrollTop();
+    homeHeight = $("#home").height();
+    if (scroll >= homeHeight - navHeight - 50) { //if you've scrolled further than the height of div
       $("nav ul").css("background","rgba(0,0,0,0.8)");
       $("nav ul li a").css("color","white");
-      $("nav ul li a").mouseenter(function() { //background color change on hover
-        $(this).css("background","rgba(0,0,0,0.8)");
-      }).mouseleave(function() {
-        $(this).css("background","none");
-      });
     } else {
       $("nav ul").css("background","rgba(255,255,255,0.6)");
       $("nav ul li a").css("color","black");
-      $("nav ul li a").mouseenter(function() { //background color change on hover
-        $(this).css("background","rgba(255,255,255,0.7)");
-      }).mouseleave(function() {
-        $(this).css("background","none");
-      });
     }
   });
 
+
+  //Active Navigation
+  $(window).scroll(function() {
+    scroll = $(window).scrollTop();
+    homeHeight = $("#home").height();
+    aboutHeight = $("#about").height();
+    var distanceFromBottom = $(document).height() - scroll - $(window).height();
+    if (scroll < homeHeight-navHeight-50) {
+      $("nav ul li #home-nav").addClass("active");
+    } else {
+      $("nav ul li #home-nav").removeClass("active");
+    }
+    if (scroll >= homeHeight-navHeight-50 && scroll < homeHeight+aboutHeight-navHeight) {
+      $("nav ul li #about-nav").addClass("active");
+    } else {
+      $("nav ul li #about-nav").removeClass("active");
+    }
+    if (scroll >= homeHeight+aboutHeight-navHeight && distanceFromBottom > 70) {
+      $("nav ul li #projects-nav").addClass("active");
+    } else {
+      $("nav ul li #projects-nav").removeClass("active");
+    }
+    if (distanceFromBottom <= 70) {
+      $("nav ul li #contact-nav").addClass("active");
+    } else {
+      $("nav ul li #contact-nav").removeClass("active");
+    }
+  });
+
+
   //Scrolling
-  $("#about-nav").click(function (){
+  $("#about-nav, .arrow-wrapper").click(function (){  //note jQuery selector syntax for 'or'
     $('html, body').animate({
-      scrollTop: $("#about").offset().top - $("nav ul").height()
+      scrollTop: $("#about").offset().top - navHeight/2
     }, 750);
     return false;
   });
   $("#projects-nav").click(function (){
     $('html, body').animate({
-      scrollTop: $("#projects").offset().top - $("nav ul").height()
+      scrollTop: $("#projects").offset().top - navHeight
     }, 750);
     return false;
   });
   $("#contact-nav").click(function (){
     $('html, body').animate({
       scrollTop: $("#contact").offset().top
-    }, 750);
-    return false;
-  });
-  $(".arrow-wrapper").click(function (){
-    $('html, body').animate({
-      scrollTop: $("#about").offset().top - $("nav ul").height()
     }, 750);
     return false;
   });
@@ -89,13 +110,12 @@ $(document).ready(function (){
 
 
   //Add fade transition to popups, except for when navigating with prev/next buttons
-  $(".pictures, .close").on("click", function() {  //note jQuery target selector syntax for 'or'
+  $(".pictures, .close").on("click", function() {
     $(".overlay").css("transition","0.4s");
   });
   $(".prev-next").on("click", function() {
     $(".overlay").css("transition","none");
   });
-
 
 
 });

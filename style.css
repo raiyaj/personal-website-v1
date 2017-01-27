@@ -37,7 +37,7 @@ nav ul {
   margin-top: 0px;
   z-index: 2;
   background: rgba(255,255,255,0.6);
-  padding: 8px 0px;
+  padding: 9px 0px;
 
   /* transition for background change (triggered in javascript) */
   -webkit-transition: all 0.7s ease;
@@ -57,11 +57,11 @@ nav ul li:last-child {
 
 nav ul li a {
   font-family: 'Roboto', sans-serif;
-  font-size: 13px;
+  font-size: 14px;
   letter-spacing: 0.5px;
   text-decoration: none;
   color: black;
-  padding: 8px 12px;
+  padding: 9px 12px;
 
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -70,8 +70,12 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
+nav ul li .active {
+  color: #4acc43 !important;
+}
+
 nav ul li a:hover {
-  background: rgba(255,255,255,0.7);
+  color: #4acc43 !important;
 }
 
 @media screen and (max-width:799px) {
