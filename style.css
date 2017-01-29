@@ -100,21 +100,21 @@ header {
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  margin-top: -40px;
+  margin-top: -45px;
 }
 
 header h1 {
   font-family: 'Cormorant Garamond', sans-serif;
-  font-size: 42px;
+  font-size: 57px;
   letter-spacing: 2px;
   font-weight: 400;
 }
 
 header .home-text {
   font-family: 'Megrim', sans-serif;
-  font-size: 24px;
+  font-size: 29px;
   letter-spacing: 1px;
-  margin-top: -18px;
+  margin-top: -31px;
 }
 
 
