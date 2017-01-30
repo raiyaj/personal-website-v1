@@ -17,7 +17,7 @@ $(document).ready(function (){
       $("nav ul li a").css("color","white");
     } else {
       $("nav ul").css("background","rgba(255,255,255,0.6)");
-      $("nav ul li a").css("color","black");
+      $("nav ul li a").css("color","#4f4f4f");
     }
   });
 

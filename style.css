@@ -60,7 +60,7 @@ nav ul li a {
   font-size: 14px;
   letter-spacing: 0.5px;
   text-decoration: none;
-  color: black;
+  color: #4f4f4f;
   padding: 9px 12px;
 
   -webkit-transition: all 0.3s ease;
@@ -101,6 +101,7 @@ header {
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-top: -45px;
+  color: #4f4f4f;
 }
 
 header h1 {
