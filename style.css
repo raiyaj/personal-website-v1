@@ -323,7 +323,7 @@ img.pictures:hover {
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   visibility: hidden;
   opacity: 0;
   overflow-y: scroll;
@@ -331,6 +331,9 @@ img.pictures:hover {
   z-index: 3;
 }
 
+/*URLs with an # followed by an anchor name link to a certain element within a document.
+The element being linked to is the target element, and the :target selector can be used
+to style the current active target.*/
 .overlay:target {
   visibility: visible;
   opacity: 1.0;
@@ -350,7 +353,7 @@ img.pictures:hover {
   position: absolute;
   top: 4px;
   right: 15px;
-  font-size: 37px;
+  font-size: 32px;
   text-decoration: none;
   color: #4f4f4f;
 }
@@ -397,6 +400,15 @@ img.pictures:hover {
 .prev-next a {
   text-decoration: none;
   color: #4f4f4f;
+}
+
+/* Desktop (bring X to right of popup, like on Twitter), slightly after most desktop effects kick in */
+@media screen and (min-width:850px) {
+  .popup .close {
+    color: white;
+    right: -40px;
+    top: -9px;
+  }
 }
 
 /* Mobile (hide fa arrows and play with popup margins) */
