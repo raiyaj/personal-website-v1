@@ -308,8 +308,8 @@ img.pictures {
 }
 
 img.pictures:hover {
-  opacity: 0.8;
-  transform: scale(0.985);
+  opacity: 0.95;
+  transform: scale(0.99);
 }
 
 
