@@ -39,12 +39,12 @@ $(document).ready(function (){
     } else {
       $("nav ul li #about-nav").removeClass("active");
     }
-    if (scroll >= homeHeight+aboutHeight-navHeight && distanceFromBottom > 70) {
+    if (scroll >= homeHeight+aboutHeight-navHeight && distanceFromBottom > 0) {
       $("nav ul li #projects-nav").addClass("active");
     } else {
       $("nav ul li #projects-nav").removeClass("active");
     }
-    if (distanceFromBottom <= 70) {
+    if (distanceFromBottom == 0) {
       $("nav ul li #contact-nav").addClass("active");
     } else {
       $("nav ul li #contact-nav").removeClass("active");

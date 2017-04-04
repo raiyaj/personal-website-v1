@@ -457,17 +457,23 @@ to style the current active target.*/
 
 /* Contact */
 
-div #contact {
-  padding-top: 35px;
+#contact {
+  padding: 22px 0px;
 }
 
-.github-link {
+#contact .copyright {
+  color: #afafaf;
+  font-size: 13px;
+  text-decoration: none;
+  float: left;
+}
+
+#contact .github-link {
   color: #afafaf;
   text-decoration: none;
-  font-size: 14px;
 }
 
-.github-link:hover {
+#contact .github-link:hover {
   color: black;
   -webkit-transition: .4s;
   -moz-transition: all .4s;
@@ -476,10 +482,23 @@ div #contact {
   transition: all .4s;
 }
 
-.contact-link-container .fa {
-  color: #4aba44;
-  margin: 0px 5px;
-  font-size: 23px;
+#contact .contact-links {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  float: right;
+}
+
+#contact .contact-links:hover .fa {
+  color: #afafaf;
+}
+
+#contact .contact-links .fa {
+  color: black;
+  margin: 14px 2px 0px 2px;
+  font-size: 15px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -487,16 +506,10 @@ div #contact {
   transition: all .3s;
 }
 
-.contact-link-container .fa:hover {
-  color: #35a030;
-  z-index: 1; /* causes scaling not to disrupt other formatting */
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
+#contact .contact-links .fa:hover {
+  color: black;
 }
 
-.fa-envelope {
-  margin-left: 0px !important;
+#contact .fa-codepen {
+  margin-right: 0px !important;
 }
