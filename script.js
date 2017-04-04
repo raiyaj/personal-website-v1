@@ -1,8 +1,9 @@
 $(document).ready(function (){
 
 
-  //Declare scrolling-related variables
+  //Declare size-related variables
   var scroll;  //pixels you've scrolled from top
+  var docwidth = $(document).width();
   var homeHeight;  //height of div in pixels
   var aboutHeight;
   var navHeight = $("nav ul").height(); //always constant so calculate now
@@ -77,7 +78,7 @@ $(document).ready(function (){
     return false;
   });
 
-
+  /*
   //Disable background scrolling while popup is open
   $(".pictures").on("click", function() {
     $("body").css("overflow","hidden");
@@ -92,8 +93,9 @@ $(document).ready(function (){
     $("body").css("overflow","hidden");
 
   }
+  */
 
-
+  /*
   //Click anywhere outside popup to close
   $(document).click(function(e) {  // 'e' is event
     if ((window.location.href.indexOf("#front-end-dev") != -1 ||
@@ -107,8 +109,9 @@ $(document).ready(function (){
       $(".overlay").css("transition","0.4s");  //re-add overlay transition
     }
   });
+  */
 
-
+  /*
   //Add fade transition to popups, except for when navigating with prev/next buttons
   $(".pictures, .close").on("click", function() {
     $(".overlay").css("transition","0.4s");
@@ -116,6 +119,7 @@ $(document).ready(function (){
   $(".prev-next").on("click", function() {
     $(".overlay").css("transition","none");
   });
+  */
 
 
 });

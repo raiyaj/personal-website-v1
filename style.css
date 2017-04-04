@@ -206,7 +206,7 @@ div #about {
   width: 736px;
   text-align: center;
   position: relative;
-  margin: 0 auto;
+  margin: auto;
 }
 
 .text-container {
@@ -231,7 +231,9 @@ div #about {
 }
 
 
-
+.weather {
+  width: 100%;
+}
 
 /* Projects */
 div #projects {
@@ -239,7 +241,7 @@ div #projects {
   padding-top: 40px;
 }
 
-div .projects {
+.projects {
   display: inline-flex;
   flex-wrap: wrap;
   width: 100%;
@@ -310,6 +312,7 @@ img.pictures {
 img.pictures:hover {
   opacity: 0.95;
   transform: scale(0.99);
+  cursor: pointer;
 }
 
 
