@@ -1,6 +1,3 @@
-/* Includes body, navigation bar, background image and social media. */
-
-
 body {
   text-align: center;
   width: 100%;
@@ -26,11 +23,9 @@ html, body {
 }
 
 
+/* Navigation Bar */
 
-
-/* Top Navigation Bar */
-
-nav ul {
+#home nav ul {
   text-align: right;
   position: fixed;
   width: 100%;
@@ -47,15 +42,15 @@ nav ul {
   transition: all 0.7s ease;
 }
 
-nav ul li {
+#home nav ul li {
   display: inline;
 }
 
-nav ul li:last-child {
+#home nav ul li:last-child {
   margin-right: 55px;
 }
 
-nav ul li a {
+#home nav ul li a {
   font-family: 'Roboto', sans-serif;
   font-size: 14px;
   letter-spacing: 0.5px;
@@ -70,29 +65,25 @@ nav ul li a {
   transition: all 0.3s ease;
 }
 
-nav ul li .active {
+#home nav ul li .active {
   color: #4acc43 !important;
 }
 
-nav ul li a:hover {
+#home nav ul li a:hover {
   color: #4acc43 !important;
 }
 
 @media screen and (max-width:799px) {
-  nav ul {
+  #home nav ul {
     text-align: center;
   }
-  nav ul li:last-child {
+  #home nav ul li:last-child {
     margin-right: 0px;
   }
 }
 
 
-
-
-/* Home Text */
-
-header {
+#home header {
   position: relative;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -104,14 +95,14 @@ header {
   color: #4f4f4f;
 }
 
-header h1 {
+#home header h1 {
   font-family: 'Rajdhani', sans-serif;
   font-size: 45px;
   letter-spacing: 2px;
   font-weight: 400;
 }
 
-header .home-text {
+#home header p {
   font-family: 'Megrim', sans-serif;
   font-size: 29px;
   letter-spacing: 1px;
@@ -119,31 +110,30 @@ header .home-text {
 }
 
 @media screen and (max-width:799px) {
-  header h1 {
+  #home header h1 {
     font-size: 38px;
   }
-  header .home-text {
+  #home header p {
     font-size: 25px;
     margin-top: -20px;
   }
 }
 
 
+/* Down Arrow */
 
-
-/* Down Arrows */
-div.arrow-wrapper {
+#home .arrow-wrapper {
   padding: 0;
 }
 
-.fa-angle-down {
+#home .arrow-wrapper .fa {
   color: #4f4f4f;
   margin-bottom: 10px;
   position: absolute;
   transform: translate(-50%);
 }
 
-.fa-angle-down:hover {
+#home .arrow-wrapper .fa:hover {
   bottom: -7px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
@@ -152,7 +142,7 @@ div.arrow-wrapper {
   transition: all .3s;
 }
 
-.fa-angle-down:not(:hover) {
+#home .arrow-wrapper .fa:not(:hover) {
   bottom: +7px;
   -webkit-transition: all .6s;
   -moz-transition: all .6s;
@@ -164,7 +154,7 @@ div.arrow-wrapper {
 
 
 
-/* Main Page Section Text */
+/* General Site Text and Layouts */
 
 .page {
   margin-top: 0px;
@@ -188,20 +178,6 @@ div.arrow-wrapper {
   color: #4f4f4f;
 }
 
-.bold {
-  font-weight: bold;
-}
-
-
-
-
-/* About */
-
-div #about {
-  padding-top: 57px;
-  padding-bottom: 22px;
-}
-
 .block-container {
   width: 736px;
   text-align: center;
@@ -214,173 +190,10 @@ div #about {
   position: relative;
   overflow: hidden;
 }
-
-.headshot {
-  border-radius: 50%;
-  width: 140px;
-}
-
-/* Mobile (re-size main page content and add space underneath headshot) */
 @media screen and (max-width:799px) {
   .block-container {
     width: 92%;
   }
-  .headshot {
-    margin-bottom: 20px;
-  }
-}
-
-
-.weather {
-  width: 100%;
-}
-
-/* Projects */
-div #projects {
-  padding-bottom: 22px;
-  padding-top: 40px;
-}
-
-.projects {
-  display: inline-flex;
-  flex-wrap: wrap;
-  width: 100%;
-}
-
-.projects a {
-  text-decoration: none;
-  color: black;
-}
-.projects figure img {
-  margin-bottom: 20px;
-}
-
-/* Desktop (grid) */
-@media screen and (min-width:800px) {
-  .projects section {
-    width: calc(50% - 20px);
-    margin-right: 40px;
-  }
-  .projects section:nth-of-type(2n) {
-    margin-right: 0px;
-  }
-  .projects section:nth-child(3) {
-    margin: 0 auto;
-  }
-}
-
-/* Mobile (stacked) */
-@media screen and (max-width:799px) {
-  .projects section {
-    margin: auto;
-    width: 450px;
-  }
-  .project-title {
-    margin-left: calc((100% - 450px) / 2);
-  }
-}
-
-/* Mobile, once project images have filled .block-container (eg. 92%) */
-@media screen and (max-width:487px) {
-  .project-title {
-    margin-left: 0;
-  }
-}
-
-figure {
-  margin: 0;
-}
-
-figcaption {
-  margin-bottom: 10px;
-  text-align: left;
-  color: #4f4f4f;
-}
-
-img.pictures {
-  border: none;
-  max-width: 100%;
-  height: auto;
-  border-radius: 4px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-img.pictures:hover {
-  opacity: 0.95;
-  transform: scale(0.99);
-  cursor: pointer;
-}
-
-
-
-
-/* Popup */
-
-.overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(0, 0, 0, 0.5);
-  visibility: hidden;
-  opacity: 0;
-  overflow-y: scroll;
-  overflow-x: hidden;
-  z-index: 3;
-}
-
-/*URLs with an # followed by an anchor name link to a certain element within a document.
-The element being linked to is the target element, and the :target selector can be used
-to style the current active target.*/
-.overlay:target {
-  visibility: visible;
-  opacity: 1.0;
-}
-
-.popup {
-  margin: auto;
-  padding: 20px;
-  background: #FFF;
-  position: relative;
-  margin-top: 100px;
-  width: 700px;
-  border-radius: 5px;
-}
-
-.popup .close {
-  position: absolute;
-  top: 4px;
-  right: 15px;
-  font-size: 32px;
-  text-decoration: none;
-  color: #4f4f4f;
-}
-
-.popup p {
-  text-align: left;
-}
-
-.popup .popup-container {
-  text-align: center;
-  position: relative;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.popup h1 {
-  margin-bottom: 33px;
-  text-align: center;
-  margin-top: 12px;
-  font-family: 'Roboto', sans-serif;
-  font-size: 20px;
-  letter-spacing: 1.5px;
-  color: #4f4f4f;
-  font-weight: 500;
 }
 
 .green-hyperlink {
@@ -392,55 +205,88 @@ to style the current active target.*/
   border-bottom: solid 1px #35a030;
 }
 
-.popup img {
+
+
+
+#about {
+  padding-top: 57px;
+  padding-bottom: 22px;
+}
+
+#about img {  /* headshot */
+  border-radius: 50%;
+  width: 140px;
+}
+
+/* Mobile (re-size main page content and add space underneath headshot) */
+@media screen and (max-width:799px) {
+  #about img {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+#projects {
+  padding-bottom: 22px;
+  padding-top: 40px;
+}
+
+#projects .projects {
+  display: inline-flex;
+  flex-wrap: wrap;
   width: 100%;
 }
 
-.prev-next {
-  text-align: right !important;
+/* Desktop (grid) */
+@media screen and (min-width:800px) {
+  #projects .projects section {
+    width: calc(50% - 20px);
+    margin-right: 40px;
+  }
+  #projects .projects section:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+  /*#projects .projects section:last-child {
+    margin: 0 auto;
+  }*/
 }
 
-.prev-next a {
-  text-decoration: none;
+/* Mobile (stacked) */
+@media screen and (max-width:799px) {
+  #projects .projects section {
+    margin: auto;
+    width: 450px;
+  }
+  #projects .page-title {
+    margin-left: calc((100% - 450px) / 2);
+  }
+}
+
+/* Mobile, once project images have filled .block-container (eg. 92%) */
+@media screen and (max-width:487px) {
+  #projects .page-title {
+    margin-left: 0;
+  }
+}
+
+#projects .projects section figure {
+  margin: 0;
+}
+
+#projects .projects section figure figcaption {
+  margin-bottom: 10px;
+  text-align: left;
   color: #4f4f4f;
 }
 
-/* Desktop (bring X to right of popup, like on Twitter), slightly after most desktop effects kick in */
-@media screen and (min-width:850px) {
-  .popup .close {
-    color: white;
-    right: -40px;
-    top: -9px;
-  }
-}
-
-/* Mobile (hide fa arrows and play with popup margins) */
-@media screen and (max-width:799px) {
-  .popup {
-    margin-top: 0px;
-    width: 90%;
-  }
-}
-
-
-
-
-/* Button */
-
-.button-container {
-  margin-top: 25px;
-  text-align: left;
-}
-
-.button {
-  text-decoration: none;
-  width: 500px;
-  background-color: #4ba846;
-  color: white;
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
-  border-radius: 3px;
-  padding: 10px 20px 10px 20px;
+#projects .projects section figure img {
+  margin-bottom: 20px;
+  border: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -448,14 +294,20 @@ to style the current active target.*/
   transition: all .3s;
 }
 
-.button:hover {
-  background: #348e5b;
+#projects .projects section figure img:hover {
+  opacity: 0.95;
+  transform: scale(0.99);
+  cursor: pointer;
+}
+
+#projects .extra-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0px;
 }
 
 
 
-
-/* Contact */
 
 #contact {
   padding: 22px 0px;
@@ -468,12 +320,12 @@ to style the current active target.*/
   float: left;
 }
 
-#contact .github-link {
+#contact .copyright .github-link {
   color: #afafaf;
   text-decoration: none;
 }
 
-#contact .github-link:hover {
+#contact .copyright .github-link:hover {
   color: black;
   -webkit-transition: .4s;
   -moz-transition: all .4s;
@@ -510,6 +362,6 @@ to style the current active target.*/
   color: black;
 }
 
-#contact .fa-codepen {
-  margin-right: 0px !important;
+#contact .contact-links:last-child {
+  margin-right: 0px;
 }
