@@ -32,7 +32,7 @@ html, body {
   margin-top: 0px;
   z-index: 2;
   background: rgba(255,255,255,0.6);
-  padding: 9px 0px;
+  padding: 5px 0px;
 
   /* transition for background change (triggered in javascript) */
   -webkit-transition: all 0.7s ease;
@@ -47,17 +47,13 @@ html, body {
 }
 
 #home nav ul li:last-child {
-  margin-right: 55px;
+  margin-right: 45px;
 }
 
 #home nav ul li a {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  letter-spacing: 0.5px;
   text-decoration: none;
-  color: #4f4f4f;
-  padding: 9px 12px;
-
+  padding: 0px 10px;
+  font-size: 13px;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -161,8 +157,8 @@ html, body {
 }
 
 .page-title {
-  font-family: 'Roboto', sans-serif;
-  font-size: 15px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
   font-weight: bold;
   margin-top: 0px;
   margin-bottom: 12px;
@@ -171,11 +167,11 @@ html, body {
 }
 
 .page-text {
-  font-family: 'Roboto', sans-serif;
-  letter-spacing: 0.3px;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
   line-height: 22px;
-  font-size: 15px;
-  color: #4f4f4f;
+  font-size: 14px;
+  color: #5e5e5e;
 }
 
 .block-container {
