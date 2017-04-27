@@ -1,0 +1,363 @@
+body {
+  text-align: center;
+  width: 100%;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+
+
+
+/* Background Image */
+
+#home {
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  transition: height 0.5s;
+}
+
+
+/* Navigation Bar */
+
+#home nav ul {
+  text-align: right;
+  position: fixed;
+  width: 100%;
+  margin-top: 0px;
+  z-index: 2;
+  background: rgba(255,255,255,0.6);
+  padding: 5px 0px;
+
+  /* transition for background change (triggered in javascript) */
+  -webkit-transition: all 0.7s ease;
+  -moz-transition: all 0.7s ease;
+  -ms-transition: all 0.7s ease;
+  -o-transition: all 0.7s ease;
+  transition: all 0.7s ease;
+}
+
+#home nav ul li {
+  display: inline;
+}
+
+#home nav ul li:last-child {
+  margin-right: 45px;
+}
+
+#home nav ul li a {
+  text-decoration: none;
+  padding: 0px 10px;
+  font-size: 13px;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+#home nav ul li .active {
+  color: #4acc43 !important;
+}
+
+#home nav ul li a:hover {
+  color: #4acc43 !important;
+}
+
+@media screen and (max-width:799px) {
+  #home nav ul {
+    text-align: center;
+  }
+  #home nav ul li:last-child {
+    margin-right: 0px;
+  }
+}
+
+
+#home header {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  margin-top: -45px;
+  color: #4f4f4f;
+}
+
+#home header h1 {
+  font-family: 'Rajdhani', sans-serif;
+  font-size: 45px;
+  letter-spacing: 2px;
+  font-weight: 400;
+}
+
+#home header p {
+  font-family: 'Megrim', sans-serif;
+  font-size: 29px;
+  letter-spacing: 1px;
+  margin-top: -30px;
+}
+
+@media screen and (max-width:799px) {
+  #home header h1 {
+    font-size: 38px;
+  }
+  #home header p {
+    font-size: 25px;
+    margin-top: -20px;
+  }
+}
+
+
+/* Down Arrow */
+
+#home .arrow-wrapper {
+  padding: 0;
+}
+
+#home .arrow-wrapper .fa {
+  color: #4f4f4f;
+  margin-bottom: 10px;
+  position: absolute;
+  transform: translate(-50%);
+}
+
+#home .arrow-wrapper .fa:hover {
+  bottom: -7px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+#home .arrow-wrapper .fa:not(:hover) {
+  bottom: +7px;
+  -webkit-transition: all .6s;
+  -moz-transition: all .6s;
+  -ms-transition: all .6s;
+  -o-transition: all .6s;
+  transition: all .6s;
+}
+
+
+
+
+/* General Site Text and Layouts */
+
+.page {
+  margin-top: 0px;
+}
+
+.page-title {
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 0px;
+  margin-bottom: 12px;
+  letter-spacing: 0.5px;
+  color: #4f4f4f;
+}
+
+.page-text {
+  font-family: 'Lato', sans-serif;
+  letter-spacing: 0.5px;
+  line-height: 22px;
+  font-size: 14px;
+  color: #5e5e5e;
+}
+
+.block-container {
+  width: 736px;
+  text-align: center;
+  position: relative;
+  margin: auto;
+}
+
+.text-container {
+  text-align: left;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width:799px) {
+  .block-container {
+    width: 92%;
+  }
+}
+
+.green-hyperlink {
+  color: #4aba44;
+  text-decoration: none;
+}
+
+.green-hyperlink:hover {
+  border-bottom: solid 1px #35a030;
+}
+
+
+
+
+#about {
+  padding-top: 57px;
+  padding-bottom: 22px;
+}
+
+#about img {  /* headshot */
+  border-radius: 50%;
+  width: 140px;
+}
+
+/* Mobile (re-size main page content and add space underneath headshot) */
+@media screen and (max-width:799px) {
+  #about img {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+
+#projects {
+  padding-bottom: 22px;
+  padding-top: 40px;
+}
+
+#projects .projects {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+/* Desktop (grid) */
+@media screen and (min-width:800px) {
+  #projects .projects section {
+    width: calc(50% - 20px);
+    margin-right: 40px;
+  }
+  #projects .projects section:nth-of-type(2n) {
+    margin-right: 0px;
+  }
+  /*#projects .projects section:last-child {
+    margin: 0 auto;
+  }*/
+}
+
+/* Mobile (stacked) */
+@media screen and (max-width:799px) {
+  #projects .projects section {
+    margin: auto;
+    width: 450px;
+  }
+  #projects .page-title {
+    margin-left: calc((100% - 450px) / 2);
+  }
+}
+
+/* Mobile, once project images have filled .block-container (eg. 92%) */
+@media screen and (max-width:487px) {
+  #projects .page-title {
+    margin-left: 0;
+  }
+}
+
+#projects .projects section figure {
+  margin: 0;
+}
+
+#projects .projects section figure figcaption {
+  margin-bottom: 10px;
+  text-align: left;
+  color: #4f4f4f;
+}
+
+#projects .projects section figure img {
+  margin-bottom: 20px;
+  border: none;
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+#projects .projects section figure img:hover {
+  opacity: 0.95;
+  transform: scale(0.99);
+  cursor: pointer;
+}
+
+#projects .extra-info {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 0px;
+}
+
+
+
+
+#contact {
+  padding: 22px 0px;
+}
+
+#contact .copyright {
+  color: #afafaf;
+  font-size: 13px;
+  text-decoration: none;
+  float: left;
+}
+
+#contact .copyright .github-link {
+  color: #afafaf;
+  text-decoration: none;
+}
+
+#contact .copyright .github-link:hover {
+  color: black;
+  -webkit-transition: .4s;
+  -moz-transition: all .4s;
+  -ms-transition: all .4s;
+  -o-transition: all .4s;
+  transition: all .4s;
+}
+
+#contact .contact-links {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  float: right;
+}
+
+#contact .contact-links:hover .fa {
+  color: #afafaf;
+}
+
+#contact .contact-links .fa {
+  color: black;
+  margin: 14px 2px 0px 2px;
+  font-size: 15px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+}
+
+#contact .contact-links .fa:hover {
+  color: black;
+}
+
+#contact .contact-links:last-child {
+  margin-right: 0px;
+}
