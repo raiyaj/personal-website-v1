@@ -47,9 +47,10 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 @media screen and (max-width:799px) {
   .block-container {
-    width: 92%;
+    width: 80%;
   }
 }
 
@@ -127,47 +128,56 @@ nav ul li:first-child a {
 #home {
   width: 100%;
   height: 70%;
-  background: #eae6da;
+  background: #edebe8;
 }
 
 #home header {
-  /*text-align: left;*/
-  /*position: relative;*/
   top: 50%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   -o-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: white;
+}
+
+#home header p {
+  color: #a8a4a4;
+  margin-left: 3px;
 }
 
 #home header h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 35px;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: lighter;
+  font-family: 'Montserrat Subrayada', sans-serif;
+  letter-spacing: 0px;
+  color: #a7ed1a;
+  font-size: 47px;
+  margin-top: -27px;
+  margin-bottom: -21px;
 }
 
-#home header div h1:nth-child(2) {
-  margin-top: -30px;
-}
-
-#home header div h1 span {
-  color: #474747;
-  font-size: 45px;
-  font-weight: 200;
+#home header .subtitle-two {
+  color: #3a3a3a;
+  font-size: 11.5px;
+  font-weight: bolder;
 }
 
 @media screen and (max-width:799px) {
   #home header h1 {
     font-size: 38px;
+    text-align: center;
+    margin-top: -24.5px;
+    margin-bottom: -18.5px;
   }
-  #home .block-container {
-    width: 90%;
+  #home header p {
+    text-align: center;
   }
-  #home .block-container .text-container {
-    width: 90%;
+  #home header .subtitle-one {
+    margin-left: -206px;
+    font-size: 14px;
+  }
+  #home header .subtitle-two {
+    margin-left: -100px;
+    font-size: 10.5px;
   }
 }
 
@@ -184,11 +194,8 @@ nav ul li:first-child a {
 }
 
 @media screen and (max-width:799px) {
-  #about .block-container {
-    width: 90%;
-  }
   #about .block-container .text-container {
-    width: 90%;
+    width: 100%;
   }
 }
 
@@ -199,7 +206,6 @@ nav ul li:first-child a {
 .contact-outer {
   text-align: center;
   display: block;  /* centers div horizontally */
-  margin: 0 auto;
   margin-top: 25px;
 }
 
@@ -208,13 +214,13 @@ nav ul li:first-child a {
 }
 
 .contact-inner:hover button {
-  background: #ffe17c;
+  background: #d1fc7b;
 }
 
 .contact-inner button {
   color: #515151;
   font-size: 13px;
-  background: #ffc70f;
+  background: #abf713;
   border: none;
   border-radius: 1px;
   padding: 10px 18px;
@@ -236,7 +242,7 @@ nav ul li:first-child a {
 
 .contact-inner button:hover {
   cursor: pointer;
-  background: #ffc70f;
+  background: #abf713;
 }
 
 .mobile-links {
@@ -244,8 +250,7 @@ nav ul li:first-child a {
 }
 
 /* Mobile: Replace contact button text with icons */
-
-@media screen and (max-width:650px) {
+@media screen and (max-width:799px) {
   .desktop-links {
     display: none;
   }
@@ -291,16 +296,6 @@ nav ul li:first-child a {
     margin: auto;
     width: 450px;
   }
-  #projects .page-title {
-    margin-left: calc((100% - 450px) / 2);
-  }
-}
-
-/* Mobile, once project images have filled .block-container (eg. 92%) */
-@media screen and (max-width:487px) {
-  #projects .page-title {
-    margin-left: 0;
-  }
 }
 
 #projects .projects section figure {
@@ -318,7 +313,7 @@ nav ul li:first-child a {
   border: none;
   max-width: 100%;
   height: auto;
-  /*border-radius: 4px;*/
+
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -349,7 +344,6 @@ nav ul li:first-child a {
   color: #878787;
   font-size: 12px;
   text-decoration: none;
-  float: left;
 }
 
 .copyright .fa-heart {
@@ -368,4 +362,11 @@ nav ul li:first-child a {
   -ms-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
+}
+
+/* Mobile: center copyright text */
+@media screen and (max-width:799px) {
+  .copyright {
+    text-align: center;
+  }
 }
