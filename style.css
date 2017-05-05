@@ -145,7 +145,7 @@ nav ul li:first-child a {
 #home header h1 {
   font-family: 'Montserrat', sans-serif;
   font-size: 35px;
-  font-weight: 200;
+  font-weight: 400;
   letter-spacing: 2px;
 }
 
@@ -156,6 +156,7 @@ nav ul li:first-child a {
 #home header div h1 span {
   color: #474747;
   font-size: 45px;
+  font-weight: 200;
 }
 
 @media screen and (max-width:799px) {
@@ -173,8 +174,8 @@ nav ul li:first-child a {
 
 
 #about {
-  padding-top: 80px;
-  padding-bottom: 55px;
+  padding-top: 65px;
+  padding-bottom: 60px;
 }
 
 #about .block-container .text-container {
@@ -193,9 +194,75 @@ nav ul li:first-child a {
 
 
 
+/* Contact buttons */
+
+.contact-outer {
+  text-align: center;
+  display: block;  /* centers div horizontally */
+  margin: 0 auto;
+  margin-top: 25px;
+}
+
+.contact-inner {
+  display: inline-block;  /* gives inner div same width as its content */
+}
+
+.contact-inner:hover button {
+  background: #ffe17c;
+}
+
+.contact-inner button {
+  color: #515151;
+  font-size: 13px;
+  background: #ffc70f;
+  border: none;
+  border-radius: 1px;
+  padding: 10px 18px;
+
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  -ms-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.contact-inner button:nth-child(n+1) {
+  margin-left: 2px;
+}
+
+.contact-inner button:focus {
+  outline: 0;
+}
+
+.contact-inner button:hover {
+  cursor: pointer;
+  background: #ffc70f;
+}
+
+.mobile-links {
+  display: none;
+}
+
+/* Mobile: Replace contact button text with icons */
+
+@media screen and (max-width:650px) {
+  .desktop-links {
+    display: none;
+  }
+  .mobile-links {
+    display: block;
+  }
+  .mobile-links .contact-inner button {
+    font-size: 15px;
+    padding: 8px 18px;
+  }
+}
+
+
+
 #projects {
-  padding-top: 70px;
-  padding-bottom: 55px;
+  padding-top: 55px;
+  padding-bottom: 35px;
 }
 
 #projects .projects {
@@ -251,7 +318,7 @@ nav ul li:first-child a {
   border: none;
   max-width: 100%;
   height: auto;
-  border-radius: 4px;
+  /*border-radius: 4px;*/
   -webkit-transition: all .3s;
   -moz-transition: all .3s;
   -ms-transition: all .3s;
@@ -274,7 +341,8 @@ nav ul li:first-child a {
 
 
 #contact {
-  padding-top: 30px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 
 .copyright {
@@ -285,7 +353,7 @@ nav ul li:first-child a {
 }
 
 .copyright .fa-heart {
-  color: #f9d9d9;
+  color: #f7b9b9;
 }
 
 .copyright .github-link {
@@ -300,36 +368,4 @@ nav ul li:first-child a {
   -ms-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-}
-
-#contact .contact-links {
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-  float: right;
-}
-
-#contact .contact-links:hover .fa {
-  color: #afafaf;
-}
-
-#contact .contact-links .fa {
-  color: black;
-  margin: 14px 2px 0px 2px;
-  font-size: 15px;
-  -webkit-transition: all .3s;
-  -moz-transition: all .3s;
-  -ms-transition: all .3s;
-  -o-transition: all .3s;
-  transition: all .3s;
-}
-
-#contact .contact-links .fa:hover {
-  color: black;
-}
-
-#contact .contact-links:last-child {
-  margin-right: 0px;
 }
