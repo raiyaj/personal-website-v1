@@ -208,12 +208,12 @@ body {
 
 #home header h1 {
   font-weight: lighter;
-  font-family: 'Montserrat Subrayada', sans-serif;
+  font-family: 'Titillium Web', sans-serif;
   letter-spacing: 0px;
   color: #a7ed1a;
   font-size: 47px;
-  margin-top: -27px;
-  margin-bottom: -21px;
+  margin-top: -32px;
+  margin-bottom: -25px;
 }
 
 #home header .subtitle-two {
@@ -226,18 +226,18 @@ body {
   #home header h1 {
     font-size: 38px;
     text-align: center;
-    margin-top: -23px;
-    margin-bottom: -18.5px;
+    margin-top: -27px;
+    margin-bottom: -21px;
   }
   #home header p {
     text-align: center;
   }
   #home header .subtitle-one {
-    margin-left: -206px;
+    margin-left: -154px;
     font-size: 14px;
   }
   #home header .subtitle-two {
-    margin-left: -100px;
+    margin-left: -48px;
     font-size: 10.5px;
   }
 }
@@ -245,7 +245,7 @@ body {
 
 
 #about {
-  padding-top: 65px;
+  padding-top: 105px;
   padding-bottom: 60px;
 }
 
@@ -328,7 +328,7 @@ body {
 
 #projects {
   padding-top: 55px;
-  padding-bottom: 35px;
+  padding-bottom: 90px;
 }
 
 #projects .projects {
@@ -397,8 +397,9 @@ body {
 
 
 #contact {
-  padding-top: 15px;
-  padding-bottom: 20px;
+  padding-top: 6px;
+  padding-bottom: 9px;
+  background: #edebe8;
 }
 
 .copyright {

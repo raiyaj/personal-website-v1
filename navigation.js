@@ -42,7 +42,7 @@ $(document).ready(function (){
     aboutHeight = $("#about").height();
     var distanceFromBottom = $(document).height() - scroll - $(window).height();
 
-    if (scroll < homeHeight-75) {
+    if (scroll < homeHeight-50) {
       if (docwidth >= 800) {  // desktop
         if (scroll <= 100) {
           $('nav ul #home-nav').removeClass('active-grey');
@@ -61,7 +61,7 @@ $(document).ready(function (){
       $('nav ul a #home-nav').parent().removeClass('active-underline');  // mobile
     }
 
-    if (scroll >= homeHeight-75 && scroll < homeHeight+aboutHeight+60) {
+    if (scroll >= homeHeight-50 && scroll < homeHeight+aboutHeight+90) {
       if (docwidth >= 800) {
         $('nav ul #about-nav').addClass('active-grey');
       } else {
@@ -75,7 +75,7 @@ $(document).ready(function (){
       }
     }
 
-    if (scroll >= homeHeight+aboutHeight+60) {
+    if (scroll >= homeHeight+aboutHeight+90) {
       if (docwidth >= 800) {
         $('nav ul #projects-nav').addClass('active-grey');
       } else {
@@ -100,13 +100,13 @@ $(document).ready(function (){
   // Scrolling (desktop)
   $('#about-nav').click(function () {
     $('html, body').animate({
-      scrollTop: $('#about').offset().top
+      scrollTop: $('#about').offset().top + 25
     }, 750);
     return false;
   });
   $('#projects-nav').click(function (){
     $('html, body').animate({
-      scrollTop: $('#projects').offset().top - 8
+      scrollTop: $('#projects').offset().top - 20
     }, 750);
     return false;
   });
@@ -123,14 +123,14 @@ $(document).ready(function (){
   $('a #about-nav').click(function() {
     $('.nav-mobile').slideToggle('medium');  // close menu
     $('html, body').animate({
-      scrollTop: $('#about').offset().top
+      scrollTop: $('#about').offset().top + 25
     }, 750);
     return false;
   });
   $('a #projects-nav').click(function() {
     $('.nav-mobile').slideToggle('medium');
     $('html, body').animate({
-      scrollTop: $('#projects').offset().top - 8
+      scrollTop: $('#projects').offset().top - 20
     }, 750);
     return false;
   });
