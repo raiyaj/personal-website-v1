@@ -167,6 +167,14 @@ body {
     font-size: 12px;
   }
 
+  .nav-mobile ul a:hover {
+    text-decoration: underline;
+  }
+
+  .nav-mobile ul .active-underline {
+    text-decoration: underline;
+  }
+
   .nav-mobile ul a li {
     padding: 10px 0;
     background: rgba(242,242,242,0.9);
@@ -174,9 +182,6 @@ body {
     width: 100%;
   }
 
-  .nav-mobile ul a:hover {
-    text-decoration: underline;
-  }
 }
 
 

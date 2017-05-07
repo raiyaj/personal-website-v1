@@ -1,12 +1,14 @@
 $(document).ready(function (){
 
 
+
   // Declare size-related variables
   var scroll;  //pixels you've scrolled from top
   var docwidth;
   var homeHeight;  //height of div in pixels
   var aboutHeight;
   var navHeight = $('nav ul').height(); //always constant so calculate now
+
 
 
   // Change background of nav bar past home section, and add hover colors
@@ -31,14 +33,17 @@ $(document).ready(function (){
   });
 
 
+
   // Active navigation for desktop
   $(window).scroll(function() {
     scroll = $(window).scrollTop();
+    docwidth = $(window).width();
     homeHeight = $("#home").height();
     aboutHeight = $("#about").height();
     var distanceFromBottom = $(document).height() - scroll - $(window).height();
-    if ($(document).width() >= 800) {
-      if (scroll < homeHeight-75) {
+
+    if (scroll < homeHeight-75) {
+      if (docwidth >= 800) {  // desktop
         if (scroll <= 100) {
           $('nav ul #home-nav').removeClass('active-grey');
           $('nav ul #home-nav').addClass('active-white');
@@ -46,26 +51,50 @@ $(document).ready(function (){
           $('nav ul #home-nav').addClass('active-white');
           $('nav ul #home-nav').addClass('active-grey');
         }
-      } else {
-        $('nav ul #home-nav').removeClass('active-white');
-        $('nav ul #home-nav').removeClass('active-grey');
+      } else {  // mobile
+        $('nav ul a #home-nav').parent().addClass('active-underline');  // eg. we're targeting the parent (the anchor tag)
+                                                                        // of the li with the id 'home-nav'
       }
-      if (scroll >= homeHeight-75 && scroll < homeHeight+aboutHeight+60) {
+    } else {
+      $('nav ul #home-nav').removeClass('active-white');
+      $('nav ul #home-nav').removeClass('active-grey');
+      $('nav ul a #home-nav').parent().removeClass('active-underline');  // mobile
+    }
+
+    if (scroll >= homeHeight-75 && scroll < homeHeight+aboutHeight+60) {
+      if (docwidth >= 800) {
         $('nav ul #about-nav').addClass('active-grey');
       } else {
-        $('nav ul #about-nav').removeClass('active-grey');
+        $('nav ul a #about-nav').parent().addClass('active-underline');  // mobile
       }
-      if (scroll >= homeHeight+aboutHeight+60) {
-        $('nav ul #projects-nav').addClass('active-grey');
+    } else {
+      if (docwidth >= 800) {
+        $('nav ul #about-nav').removeClass('active-grey');
       } else {
-        $('nav ul #projects-nav').removeClass('active-grey');
-      }
-      if (distanceFromBottom == 0) {
-        $('nav ul #about-nav').removeClass('active-grey');
-        $('nav ul #projects-nav').addClass('active-grey');
+        $('nav ul a #about-nav').parent().removeClass('active-underline');  // mobile
       }
     }
+
+    if (scroll >= homeHeight+aboutHeight+60) {
+      if (docwidth >= 800) {
+        $('nav ul #projects-nav').addClass('active-grey');
+      } else {
+        $('nav ul a #projects-nav').parent().addClass('active-underline');  // mobile
+      }
+    } else {
+      if (docwidth >= 800) {
+        $('nav ul #projects-nav').removeClass('active-grey');
+      } else {
+        $('nav ul a #projects-nav').parent().removeClass('active-underline');  // mobile
+      }
+    }
+
+    if (distanceFromBottom == 0) {
+      $('nav ul #about-nav').removeClass('active-grey');
+      $('nav ul #projects-nav').addClass('active-grey');
+    }
   });
+
 
 
   // Scrolling (desktop)
@@ -87,6 +116,7 @@ $(document).ready(function (){
     }, 750);
     return false;
   });
+
 
 
   // Scrolling (mobile)
@@ -111,6 +141,7 @@ $(document).ready(function (){
     }, 750);
     return false;
   });
+
 
 
   // Hamburger menu toggle for mobile
