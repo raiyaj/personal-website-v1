@@ -69,7 +69,7 @@ body {
 
 /* Desktop: regular menu (all links visible) */
 @media screen and (min-width:800px) {
-  .nav-mobile, .handle {
+  .nav-container, .nav-mobile, .handle {
     display: none;
   }
 
@@ -153,10 +153,6 @@ body {
     width: inherit;
     z-index: 2;
     margin-top: 40px;
-  }
-
-  .nav-mobile {
-    z-index: 2;
   }
 
   .nav-mobile ul {

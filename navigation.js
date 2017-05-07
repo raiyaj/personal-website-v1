@@ -114,12 +114,10 @@ $(document).ready(function (){
 
 
   // Hamburger menu toggle for mobile
-  if ($(document).width() < 800) {
-    $('.nav-mobile').hide();
-    $('.handle').click(function() {
-      $('.nav-mobile').slideToggle('slow');
-    });
-  }
+  $('.nav-mobile').hide();
+  $('.handle').click(function() {
+    $('.nav-mobile').slideToggle('slow');
+  });
 
 
 });
