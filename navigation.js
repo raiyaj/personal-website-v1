@@ -11,7 +11,7 @@ $(document).ready(function (){
 
 
 
-  // Change background of nav bar past home section, and add hover colors
+  // Change background/text colour and height of nav bar past home section
   $(window).scroll(function() { // Execute each time you scroll
     scroll = $(window).scrollTop();
     homeHeight = $('#home').height();
@@ -34,7 +34,7 @@ $(document).ready(function (){
 
 
 
-  // Active navigation for desktop
+  // Active navigation for desktop and mobile
   $(window).scroll(function() {
     scroll = $(window).scrollTop();
     docwidth = $(window).width();
@@ -97,7 +97,7 @@ $(document).ready(function (){
 
 
 
-  // Scrolling (desktop)
+  // Smooth scrolling (desktop)
   $('#about-nav').click(function () {
     $('html, body').animate({
       scrollTop: $('#about').offset().top + 25
@@ -119,7 +119,7 @@ $(document).ready(function (){
 
 
 
-  // Scrolling (mobile)
+  // Smooth scrolling (mobile)
   $('a #about-nav').click(function() {
     $('.nav-mobile').slideToggle('medium');  // close menu
     $('html, body').animate({
