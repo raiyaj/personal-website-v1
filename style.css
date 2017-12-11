@@ -444,6 +444,11 @@ body {
   background: #abf713;
 }
 
+.card:last-of-type:nth-child(odd) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 
 
 #contact {
