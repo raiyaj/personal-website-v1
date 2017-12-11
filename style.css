@@ -54,15 +54,6 @@ body {
   }
 }
 
-.green-hyperlink {
-  color: #4aba44;
-  text-decoration: none;
-}
-
-.green-hyperlink:hover {
-  border-bottom: solid 1px #35a030;
-}
-
 
 
 /* Navigation Bar */
@@ -335,6 +326,7 @@ body {
 #projects .projects {
   display: inline-flex;
   flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .projects {
@@ -362,17 +354,17 @@ body {
 }
 
 .card p:first-of-type {
-  text-decoration: underline;
-  text-decoration-style: dotted;
   margin-top: 5px;
   margin-bottom: -8px;
 }
 
+.card p .project-name {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}
 
-
-/* Uneven card heights (based on height of content) */
-.card:nth-of-type(1) {
-  height: 353px;
+.card p .project-type {
+  color: #93d60c;
 }
 
 
