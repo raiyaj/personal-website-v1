@@ -406,6 +406,14 @@ body {
   text-align: center;
 }
 
+.card .button-container-inner {
+  display: inline-block;
+}
+
+.card .button-container-inner:hover button {
+  background: #d1fc7b;
+}
+
 .card button {
   color: #515151;
   font-size: 13px;
@@ -431,8 +439,9 @@ body {
   outline: 0;
 }
 
-.card button:hover {
+.card .button-container-inner button:hover {
   cursor: pointer;
+  background: #abf713;
 }
 
 
