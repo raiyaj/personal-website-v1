@@ -180,7 +180,8 @@ body {
 #home {
   width: 100%;
   height: 70%;
-  background: #edebe8;
+  background: #eaede8;
+  border-bottom: 1px solid #dce2d7;
 }
 
 #home header {
@@ -457,13 +458,15 @@ body {
 #contact {
   padding-top: 6px;
   padding-bottom: 9px;
-  background: #edebe8;
+  background: #eaede8;
+  border-top: 1px solid #dce2d7;
 }
 
 .copyright {
   color: #878787;
   font-size: 12px;
   text-decoration: none;
+  text-align: center;
 }
 
 .copyright .fa-heart {
@@ -482,11 +485,4 @@ body {
   -ms-transition: all .4s;
   -o-transition: all .4s;
   transition: all .4s;
-}
-
-/* Mobile: center copyright text */
-@media screen and (max-width:799px) {
-  .copyright {
-    text-align: center;
-  }
 }
