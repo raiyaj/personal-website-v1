@@ -352,6 +352,10 @@ body {
   width: 320px;
 }
 
+.card#project-hub img {
+  border-bottom: 1px solid #eaeaea;
+}
+
 .card p {
   width: 90%;
   padding-left: 5%;
