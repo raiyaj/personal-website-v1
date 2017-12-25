@@ -371,10 +371,6 @@ body {
   text-decoration-style: dotted;
 }
 
-.card p .project-type {
-  color: #93d60c;
-}
-
 
 
 /* Stack cards on smaller screens */
@@ -474,7 +470,7 @@ body {
 }
 
 .copyright .fa-heart {
-  color: #fca9a9;
+  color: #fc9999;
 }
 
 .copyright .github-link {
