@@ -404,6 +404,25 @@ body {
 
 
 
+/* Language tags */
+
+.tag-container {
+  margin-top: 13px;
+  margin-bottom: -6px;
+  line-height: 28px;
+}
+
+.tag {
+  background: #cceaff;
+  color: #4293ce;
+  padding: 4px 6px;
+  border-radius: 4px;
+  margin-right: 1px;
+
+}
+
+
+
 /* Card Buttons */
 
 .card .button-container {
