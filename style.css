@@ -289,8 +289,8 @@ body {
   transition: all 0.4s;
 }
 
-.contact-inner button:nth-child(n+1) {
-  margin-left: 2px;
+.contact-inner button:nth-child(1) {
+  margin-left: 0.5px;
 }
 
 .contact-inner button:focus {
