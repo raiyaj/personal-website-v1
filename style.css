@@ -333,6 +333,12 @@ body {
   align-items: flex-start;
 }
 
+/* Center last card if there is an odd # of them */
+.card:last-of-type:nth-child(odd) {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .projects {
   padding-left: 17px;
 }
@@ -467,9 +473,14 @@ body {
   background: #abf713;
 }
 
-.card:last-of-type:nth-child(odd) {
-  margin-left: auto;
-  margin-right: auto;
+.card button.no-click {
+  background: none;
+  color: #91d30c;
+}
+
+.card button.no-click:hover {
+  cursor: default;
+  background: none;
 }
 
 
