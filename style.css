@@ -371,6 +371,11 @@ body {
   text-decoration-style: dotted;
 }
 
+.card p .project-year {
+  float: right;
+  font-size: smaller;
+}
+
 
 
 /* Stack cards on smaller screens */
